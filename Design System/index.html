@@ -9,6 +9,11 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style-guide.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+    
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.1/themes/vader/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+ 
   	
 	<title>Style Guide | Owen Avon</title>
 </head>
@@ -31,179 +36,120 @@
 	</header>
 
 	<main>
-		<h1>Owen's Style Guide</h1>
+        <h1>Owen's Style Guide</h1>
 		
-		
-		
-		
-		
-		
-	<div class="textRow">
-    <div class="container">
+		<div id="accordion">
+            <h1>Branding</h1>
+            <section id="branding" class="cd-branding">
+                <h2>Branding</h2>
+                <ul>
+                    <li class="cd-box"><img src="assets/branding/logo-ver-1.jpg" alt="Logo version 1"></li>
+                    <li class="cd-box"><img src="assets/branding/logo-ver-2.jpg" alt="Logo version 2"></li>
+                </ul>
+                <ul>
+                    <li><img src="assets/branding/touch-icon-1.jpg" alt="Touch Icon 1"></li>
+                    <li><img src="assets/branding/touch-icon-2.jpg" alt="Touch Icon 2"></li>
+                    <li><img src="assets/branding/favicon-1.jpg" alt="Favicon 1"></li>
+                    <li><img src="assets/branding/favicon-2.jpg" alt="Favicon 2"></li>
+                </ul> 
+            </section>
+            
+            <h1>Colours</h1>
+            <section id="colors" class="cd-colors">
+                <h2>Colors</h2>
+                <ul>
+                    <li class="cd-box">
+                        <div class="cd-color-swatch"></div>
+                    </li>
 
-      <h1 id="headingIntroText">Hey There!</h1>
-      <p id="subIntroText">Ever wonder about the various Indigenous Nations prior to European contact? Want to learn more?</p>
+                    <li class="cd-box">
+                        <div class="cd-color-swatch"></div>
+                    </li>
 
-      <ul id="unorganizedListStyle">
-        <li id="organizedListStyle">
-          <input type="radio" id="f-option" name="selector" onclick="yesButton()">
-          <label for="f-option">Heck yeah!</label><br>
-          <div class="check"></div>
-        </li>
+                    <li class="cd-box">
+                        <div class="cd-color-swatch"></div>
+                    </li>
 
-        <li id="organizedListStyle">
-          <input type="radio" id="s-option" name="selector" onclick="noButton()">
-          <label for="s-option">Nah, I'm good.</label><br>
-          <div class="check"><div class="inside"></div></div>
-        </li>
-      </ul>
+                    <li class="cd-box">
+                        <div class="cd-color-swatch"></div>
+                    </li>
 
-    </div>
-  </div>	
-		
-		
-		
-		
-		
-		
-		
-    <div class="yesContent">
-        <div id="yesChoice" class="hide">
-        
-        <p>test</p>
-    
+                    <li class="cd-box">
+                        <div class="cd-color-swatch"></div>
+                    </li>
+                </ul>
+            </section>
+            
+            <h1>Typography</h1>
+            <section id="typography" class="cd-typography">
+                <h2>Typography</h2>
+
+                <div class="cd-box">
+                    <h1>Heading, <span></span></h1>
+                    <p>Aa - <span></span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate distinctio reprehenderit, autem deleniti ad <a href="#0">voluptatum eaque</a>. Optio ea aperiam nisi distinctio nemo repellat, voluptate fugiat. Quidem neque illum, blanditiis!</p>
+                </div>
+            </section>
+            
+            <h1>Buttons</h1>
+            <section id="buttons" class="cd-buttons">
+                <h2>Buttons</h2>
+                <div class="cd-box">
+                    <button class="btn">Normal</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-alert">Alert</button>
+                    <button class="btn btn-outline">Outline</button>
+                </div>
+		    </section>
+           
+            <h1>Sizing</h1>
+            <section id="sizing" class="cd-icons">
+                <h2>Sizing</h2>
+                <ul class="cd-box">
+                    <li class="cd-icon-1"></li>
+                    <li class="cd-icon-2"></li>
+                    <li class="cd-icon-3"></li>
+                    <li class="cd-icon-4"></li>
+                    <li class="cd-icon-5"></li>
+                    <li class="cd-icon-6"></li>
+                    <li class="cd-icon-7"></li>
+                    <li class="cd-icon-8"></li>
+                </ul>
+            </section>
+            
+            <h1>Spacing</h1>
+            <section id="spacing" class="cd-form">
+                <h2>Spacing</h2>
+                <div class="cd-box">
+                    <form>
+                        <fieldset>
+                            <input type="text">
+                            <input class="success" type="text">
+                            <input class="alert" type="text">
+                        </fieldset>
+                        <fieldset>
+                            <div class="cd-input-wrapper">
+                                <input type="radio" name="radioButton" id="radio1">
+                                <label class="radio-label" for="radio1">Choice 1</label>
+                            </div>
+                            <div class="cd-input-wrapper">
+                                <input type="checkbox" id="checkbox1">
+                                <label class="checkbox-label" for="checkbox1">Option 1</label>
+                            </div>
+                            <div class="cd-input-wrapper cd-select">
+                                <select name="select-this" id="select-this">
+                                  <option value="0">Select</option>
+                                  <option value="1">Option 1</option>
+                                  <option value="2">Option 2</option>
+                                  <option value="2">Option 3</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
         </div>
-    </div>
-		
-    <div class ="noContent">
-        <div id="noChoice" class="hide">
-            <h1 id="noHeadChoiceText">Bye</h1>
-        </div>
-    </div>
-		
-		
-		
-		
-		
-		
-		
-
-		<section id="branding" class="cd-branding">
-			<h2>Branding</h2>
-
-			<ul>
-				<li class="cd-box"><img src="assets/branding/logo-ver-1.jpg" alt="Logo version 1"></li>
-				<li class="cd-box"><img src="assets/branding/logo-ver-2.jpg" alt="Logo version 2"></li>
-			</ul>
-
-			<ul>
-				<li><img src="assets/branding/touch-icon-1.jpg" alt="Touch Icon 1"></li>
-				<li><img src="assets/branding/touch-icon-2.jpg" alt="Touch Icon 2"></li>
-				<li><img src="assets/branding/favicon-1.jpg" alt="Favicon 1"></li>
-				<li><img src="assets/branding/favicon-2.jpg" alt="Favicon 2"></li>
-			</ul> 
-		</section>
-
-		<section id="colors" class="cd-colors">
-			<h2>Colors</h2>
-
-			<ul>
-				<li class="cd-box">
-					<div class="cd-color-swatch"></div>
-				</li>
-
-				<li class="cd-box">
-					<div class="cd-color-swatch"></div>
-				</li>
-
-				<li class="cd-box">
-					<div class="cd-color-swatch"></div>
-				</li>
-
-				<li class="cd-box">
-					<div class="cd-color-swatch"></div>
-				</li>
-
-				<li class="cd-box">
-					<div class="cd-color-swatch"></div>
-				</li>
-			</ul>
-		</section>
-
-		<section id="typography" class="cd-typography">
-			<h2>Typography</h2>
-
-			<div class="cd-box">
-				<h1>Heading, <span></span></h1>
-				<p>Aa - <span></span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate distinctio reprehenderit, autem deleniti ad <a href="#0">voluptatum eaque</a>. Optio ea aperiam nisi distinctio nemo repellat, voluptate fugiat. Quidem neque illum, blanditiis!</p>
-			</div>
-		</section>
-
-		<section id="buttons" class="cd-buttons">
-			<h2>Buttons</h2>
-
-			<div class="cd-box">
-				<button class="btn">Normal</button>
-				<button class="btn btn-success">Success</button>
-				<button class="btn btn-alert">Alert</button>
-				<button class="btn btn-outline">Outline</button>
-			</div>
-
-		</section>
-
-		<section id="sizing" class="cd-icons">
-			<h2>Sizing</h2>
-
-			<ul class="cd-box">
-				<li class="cd-icon-1"></li>
-				<li class="cd-icon-2"></li>
-				<li class="cd-icon-3"></li>
-				<li class="cd-icon-4"></li>
-				<li class="cd-icon-5"></li>
-				<li class="cd-icon-6"></li>
-				<li class="cd-icon-7"></li>
-				<li class="cd-icon-8"></li>
-			</ul>
-		</section>
-
-		<section id="spacing" class="cd-form">
-			<h2>Spacing</h2>
-			
-			<div class="cd-box">
-				<form>
-					<fieldset>
-						<input type="text">
-						<input class="success" type="text">
-						<input class="alert" type="text">
-					</fieldset>
-
-					<fieldset>
-						<div class="cd-input-wrapper">
-							<input type="radio" name="radioButton" id="radio1">
-	      					<label class="radio-label" for="radio1">Choice 1</label>
-      					</div>
-
-						<div class="cd-input-wrapper">
-							<input type="checkbox" id="checkbox1">
-	      					<label class="checkbox-label" for="checkbox1">Option 1</label>
-      					</div>
-
-						<div class="cd-input-wrapper cd-select">
-	      					<select name="select-this" id="select-this">
-					          <option value="0">Select</option>
-					          <option value="1">Option 1</option>
-					          <option value="2">Option 2</option>
-					          <option value="2">Option 3</option>
-					      	</select>
-				      	</div>
-					</fieldset>
-				</form>
-			</div>
-		</section>
 	</main>
-	<script src="js/test.js"></script> <!-- Resource jQuery -->
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/main.js"></script> <!-- Resource jQuery Stock and Custom -->
 
 </body>
 </html>
