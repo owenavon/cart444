@@ -108,7 +108,6 @@ jQuery(document).ready(function($){
 		});
 	}
     
-    
     // Accordion - Show and hide
     $( "#accordion" ).accordion({
         collapsible: true,
