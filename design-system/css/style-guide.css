@@ -61,6 +61,10 @@ body {
   background-color: #ffffff;
 }
 
+h1 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
 h1.main-heading {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: bold;
@@ -68,6 +72,10 @@ h1.main-heading {
     margin-top: 72px;
     margin-bottom: 0px;
     font-size: 36px;
+}
+
+h2 {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 h2.secondary-heading {
@@ -181,12 +189,14 @@ xPage title
 main > h1 {
   color: #19191a;
 }
+/*
 @media only screen and (min-width: 1600px) {
   main > h1 {
-    /* title goes into the header on big devices */
+     title goes into the header on big devices 
     color: #ffffff;
   }
 }
+*/
 
 /* -------------------------------- 
 
@@ -519,11 +529,13 @@ header nav {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+/*
 @media only screen and (min-width: 1600px) {
   .cd-logo {
     margin-left: 5%;
   }
 }
+*/
 
 .cd-nav-trigger {
   display: block;
@@ -646,11 +658,13 @@ header nav {
     border-top: none;
   }
 }
+/*
 @media only screen and (min-width: 1600px) {
   .cd-main-nav {
     display: none;
   }
 }
+*/
 
 .nav-is-visible .cd-nav-trigger span::before {
   -webkit-transform: translateY(0) rotate(-45deg);
@@ -697,6 +711,7 @@ main > h1 {
     padding-top: 80px;
   }
 }
+/*
 @media only screen and (min-width: 1600px) {
   main {
     max-width: none;
@@ -714,6 +729,7 @@ main > h1 {
     z-index: 20;
   }
 }
+*/
 
 section {
   margin: 3em 0;
@@ -746,6 +762,7 @@ section:nth-of-type(6) h2::before {
     margin: 3em 0 5em;
   }
 }
+/*
 @media only screen and (min-width: 1600px) {
   section {
     width: 48%;
@@ -756,6 +773,7 @@ section:nth-of-type(6) h2::before {
     margin-right: 0;
   }
 }
+*/
 
 /* xBranding section - basic style */
 .cd-branding .cd-box {
@@ -843,13 +861,13 @@ section:nth-of-type(6) h2::before {
   padding: .6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #5f8ee4;
+  background: #af6d29;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-  background: #759de8;
+  background: #bb7a1d;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-  background: #497fe0;
+  background: #9a6025;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
   background: #19191a;
@@ -861,13 +879,13 @@ section:nth-of-type(6) h2::before {
   background: #0d0d0d;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #e4655f;
+  background: #585959;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #e87a75;
+  background: #898d8d;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #e05049;
+  background: #414141;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #e6e6e6;

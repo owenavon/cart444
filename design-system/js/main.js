@@ -92,7 +92,7 @@ jQuery(document).ready(function($){
     $(window).on('scroll', function(){
     	updateNavigation();
     });
-
+    
     function updateNavigation() {
 		contentSections.each(function(){
 			var actual = $(this),
@@ -105,12 +105,26 @@ jQuery(document).ready(function($){
 			}else {
 				actualAnchor.removeClass('selected');
 			}
-		});
-	}
+        });
+    }
     
-    // Accordion - Show and hide
-    $( "#accordion" ).accordion({
-        collapsible: true,
-        active: false
+    /*******************
+		accordion
+	********************/
+        // Show and hide
+        $( "#accordion" ).accordion({
+            collapsible: true,
+            active: false
+        });
+
+
+        $(function() {
+            $("a.cd-branding").on("click", function() {
+            
+            
+            console.log("test");
+            });
+        });
+    
     });
-});
+    
