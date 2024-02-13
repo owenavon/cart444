@@ -28,14 +28,14 @@ jQuery(document).ready(function($){
 	});
 
 	/*******************
-		buttons
+		elements
 	********************/
-	var buttonsWrapper = $('#buttons .cd-box'),
-		buttonsHtml = buttonsWrapper.html(),
-		containerHtml = $('<div class="cd-box"></div>').insertAfter(buttonsWrapper),
-		buttonsHtmlText = buttonsHtml.split('</button>');
+	var elementsWrapper = $('#elements .cd-box'),
+		elementsHtml = elementsWrapper.html(),
+		containerHtml = $('<div class="cd-box"></div>').insertAfter(elementsWrapper),
+		elementsHtmlText = elementsHtml.split('</button>');
 
-	$.map(buttonsHtmlText, function(value){
+	$.map(elementsHtmlText, function(value){
 		if(value.indexOf('button') >= 0 ) {
 			var splitText = value.split('class="'),
 				block1 = splitText[0]+'class="';
@@ -71,43 +71,6 @@ jQuery(document).ready(function($){
 		textElement.text(fontWeight + ' '+ fontFamily+' '+fontSize );
 	}
 
-	/*******************
-		main  navigation
-	********************/
-	var contentSections = $('main section');
-	//open navigation on mobile
-	$('.cd-nav-trigger').on('click', function(){
-		$('header').toggleClass('nav-is-visible');
-	});
-	//smooth scroll to the selected section
-	$('.cd-main-nav a[href^="#"]').on('click', function(event){
-        event.preventDefault();
-        $('header').removeClass('nav-is-visible');
-        var target= $(this.hash),
-        	topMargin = target.css('marginTop').replace('px', ''),
-        	hedearHeight = $('header').height();
-        $('body,html').animate({'scrollTop': parseInt(target.offset().top - hedearHeight - topMargin)}, 200); 
-    });
-    //update selected navigation element
-    $(window).on('scroll', function(){
-    	updateNavigation();
-    });
-    
-    function updateNavigation() {
-		contentSections.each(function(){
-			var actual = $(this),
-				actualHeight = actual.height(),
-				topMargin = actual.css('marginTop').replace('px', ''),
-				actualAnchor = $('.cd-main-nav').find('a[href="#'+actual.attr('id')+'"]');
-			
-			if ( ( parseInt(actual.offset().top - $('.cd-main-nav').height() - topMargin )<= $(window).scrollTop() ) && ( parseInt(actual.offset().top +  actualHeight - topMargin )  > $(window).scrollTop() +1 ) ) {
-				actualAnchor.addClass('selected');
-			}else {
-				actualAnchor.removeClass('selected');
-			}
-        });
-    }
-    
     /*******************
 		accordion
 	********************/
@@ -119,7 +82,7 @@ jQuery(document).ready(function($){
 
 
         $(function() {
-            $("a.cd-branding").on("click", function() {
+            $("a.cd-grid").on("click", function() {
             
             
             console.log("test");

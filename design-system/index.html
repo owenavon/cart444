@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style-guide.css"> <!-- Resource style -->
@@ -19,18 +21,6 @@
 <body>
 	<header>
 		<div class="cd-logo"><img src="assets/logo.svg" alt="Logo"></div>
-
-		<nav>
-			<ul class="cd-main-nav">
-				<li><a href="#branding" class="cd-branding">Branding</a></li>
-				<li><a href="#colors">Colors</a></li>
-				<li><a href="#typography">Typography</a></li>
-				<li><a href="#sizing">Sizing</a></li>
-                <li><a href="#spacing">Spacing</a></li>
-			</ul> <!-- cd-main-nav -->
-		</nav>
-
-		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
 	</header>
 
 	<main>
@@ -38,21 +28,40 @@
         <h2 class="secondary-heading"><a class="secondary-heading" href="https://www.owenavon.com/">www.owenavon.com</a></h2>
 		
 		<div id="accordion">
-            <h1>Branding</h1>
-            <section id="branding" class="cd-branding">
-                <h2>Branding</h2>
-                <ul>
-                    <li class="cd-box"><img src="assets/branding/logo-ver-1.jpg" alt="Logo version 1"></li>
-                    <li class="cd-box"><img src="assets/branding/logo-ver-2.jpg" alt="Logo version 2"></li>
-                </ul>
-                <ul>
-                    <li><img src="assets/branding/touch-icon-1.jpg" alt="Touch Icon 1"></li>
-                    <li><img src="assets/branding/touch-icon-2.jpg" alt="Touch Icon 2"></li>
-                    <li><img src="assets/branding/favicon-1.jpg" alt="Favicon 1"></li>
-                    <li><img src="assets/branding/favicon-2.jpg" alt="Favicon 2"></li>
-                </ul> 
-            </section>
             
+            <h1>Typography</h1>
+            <section id="typography" class="cd-typography">
+                <h2>Typography</h2>
+                
+                <div class="cd-box">
+                    <h1>Century Gothic</h1>
+                    <p class="type-heading">Spacing &amp; Sizing</p>
+                    <p class="main-text">Century Gothic is a monospaced sans serif typeface. It is to be used with headings.</p>
+                    <br>
+                    
+                    <ul>
+                        <li>Heading</li>
+                        <li>Body</li>
+                        <li>Detail</li>
+                        <li>Code</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="cd-box">
+                    <h1 class="pt-serif-regular">PT Serif</h1>
+                    <p class="type-heading pt-serif-regular">Spacing &amp; Sizing</p>
+                    <p class="pt-serif-regular">PT Serif is to be used as the complementary typeface, and mainly used for body content.</p>
+                    <br> 
+                       
+                    <ul>
+                        <li class="pt-serif-regular">Heading</li>
+                        <li class="pt-serif-regular">Body</li>
+                        <li class="pt-serif-regular">Detail</li>
+                        <li class="pt-serif-regular">Code</li>
+                    </ul>
+                </div>
+            </section>
+           
             <h1>Colours</h1>
             <section id="colors" class="cd-colors">
                 <h2>Colors</h2>
@@ -78,46 +87,90 @@
                     </li>
                 </ul>
             </section>
-            
-            <h1>Typography</h1>
-            <section id="typography" class="cd-typography">
-                <h2>Typography</h2>
-
+           
+            <h1>Grid</h1>
+            <section id="grid" class="cd-grid">
+                <h2>Grid</h2>
                 <div class="cd-box">
-                    <h1>Heading, Courier New 600 Sans Serif</h1>
-                    <p>Aa &ndash; Courier New. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate distinctio reprehenderit, autem deleniti ad <a href="#0">voluptatum eaque</a>. Optio ea aperiam nisi distinctio nemo repellat, voluptate fugiat. Quidem neque illum, blanditiis!</p>
+                    <h1>Column Grid Style</h1>
+                    
+                    <p>This page demonstartes the Bootstrap grid system <a href="">link to dissection of grid system</a>.</p>
+                    
+                    <ul>
+                        <li>Amount of colums</li>
+                        <li>margin around colums</li>
+                        <li>Gutter space between colums</li>
+                        <li>Method of grid, i.e. bootstrap 4.6</li>
+                    </ul>
+                    <br>
+                    
+                    <p>Screen resolutions that range from desktop, tablet and mobile. <a href="">link to media queries</a>.</p>
+                    
+                    <ul>
+                        <li>Media queries</li>
+                        <li>Desktop, iPad, Mobile (2 font class per each range)</li>
+                    </ul>
                 </div>
             </section>
             
-            <h1>Buttons</h1>
-            <section id="buttons" class="cd-buttons">
-                <h2>Buttons</h2>
+            <h1>UI Elements</h1>
+            <section id="elements" class="cd-elements">
+                <h2>UI Elements</h2>
                 <div class="cd-box">
-                    <button class="btn">Normal</button>
-                    <button class="btn btn-success">Success</button>
-                    <button class="btn btn-alert">Alert</button>
-                    <button class="btn btn-outline">Outline</button>
-                </div>
+                    <ul>
+                        <li>Input Controls</li>
+                            <ul>
+                               <li class="bold">Checkboxes</li>
+                               <li class="bold">Radio Buttons</li>
+                               <li>Dropdown Lists</li>
+                               <li>List Boxes</li>
+                               <li class="bold">Buttons</li>
+                               <li class="bold">Toggles</li>
+                               <li>Text Fields</li>
+                               <li>Date Field</li>
+                            </ul>
+                        <br>
+                        <li>Navigation Components</li>
+                            <ul>
+                                <li>Breadcrumb</li>
+                                <li>Slider</li>
+                                <li>Search Field</li>
+                                <li>Tags</li>
+                                <li class="bold">Pagination</li>
+                                <li class="bold">Icons</li>
+                                <li>Navigation Menu</li>
+                            </ul>
+                        <br>
+                        <li>Informational Components</li>
+                            <ul>
+                                <li>Progress Bar</li>
+                                <li>Tool Tips</li>
+                                <li>Notifications</li>
+                                <li>Message Boxes</li>
+                                <li>Modal Windows</li>
+                            </ul>
+                        <br>
+                        <li>Containers</li>
+                            <ul>
+                                <li>Widgets</li>
+                                <li>Accordion</li>
+                                <li>Sidebar</li>
+                            </ul>
+                        </ul>
+                    </div>
 		    </section>
            
-            <h1>Sizing</h1>
-            <section id="sizing" class="cd-icons">
-                <h2>Sizing</h2>
+            <h1>Distribution Channels</h1>
+            <section id="channels" class="cd-channels">
+                <h2>Distribution Channels</h2>
                 <ul class="cd-box">
-                    <li class="cd-icon-1"></li>
-                    <li class="cd-icon-2"></li>
-                    <li class="cd-icon-3"></li>
-                    <li class="cd-icon-4"></li>
-                    <li class="cd-icon-5"></li>
-                    <li class="cd-icon-6"></li>
-                    <li class="cd-icon-7"></li>
-                    <li class="cd-icon-8"></li>
+                    <p>Words...</p>
                 </ul>
             </section>
             
-            <h1>Spacing</h1>
-            <section id="spacing" class="cd-form">
-                <h2>Spacing</h2>
+            <h1>Other</h1>
+            <section id="other" class="cd-other">
+                <h2>Other</h2>
                 <div class="cd-box">
                     <form>
                         <fieldset>
