@@ -10,6 +10,7 @@
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style-guide.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="./css/prism_css.css">
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
     
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.1/themes/vader/jquery-ui.css" />
@@ -25,31 +26,45 @@
 
 	<main>
         <h1 class="main-heading">Style Guide</h1>
-        <h2 class="secondary-heading"><a class="secondary-heading" href="https://www.owenavon.com/">www.owenavon.com</a></h2>
+        <h2 class="secondary-heading-extra"><a class="secondary-heading" href="https://www.owenavon.com/">www.owenavon.com</a></h2>
 		
 		<div id="accordion">
             
             <h1>Typography</h1>
             <section id="typography" class="cd-typography">
-                <h2>Typography</h2>
+                <h2 class="secondary-heading">Typography</h2>
                 
                 <div class="cd-box">
-                    <h1>Century Gothic</h1>
-                    <p class="type-heading">Spacing &amp; Sizing</p>
-                    <p class="main-text">Century Gothic is a monospaced sans serif typeface. It is to be used with headings.</p>
+                    <h1 class="main-heading-accordion">Century Gothic</h1>
+                    <p class="type-heading">Sizing &amp; Code</p>
+                    <p class="main-text">Century Gothic is a monospaced sans serif typeface. It is to be used with headings only.</p>
                     <br>
                     
-                    <ul>
-                        <li>Heading</li>
-                        <li>Body</li>
-                        <li>Detail</li>
-                        <li>Code</li>
-                    </ul>
+                    <h1 class="main-heading-style-guide">The quick brown fox jumps over the lazy dog</h1>
+                    <h2 class="secondary-heading-style-guide">The quick brown fox jumps over the lazy dog</h2>
+                    <h3 class="teritary-heading-style-guide">The quick brown fox jumps over the lazy dog</h3>
+                    <h4 class="fourth-heading-style-guide">The quick brown fox jumps over the lazy dog</h4>
+                    <h5 class="fifth-heading-style-guide">The quick brown fox jumps over the lazy dog</h5>
+                    <h6 class="sixth-heading-style-guide">The quick brown fox jumps over the lazy dog</h6>
+                    
+                    
+                    <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                        <pre>
+                            <code class="language-html line-numbers">
+&lt;h1 style="font-family:CenturyGothic,AppleGothic,sans-serif;&nbsp;font-size: 2em;"&gt;Words&lt;/h1&gt;
+&lt;h2 style="font-family:CenturyGothic,AppleGothic,sans-serif;&nbsp;font-size: 1.5em;"&gt;Words&lt;/h2&gt;
+&lt;h3 style="font-family:CenturyGothic,AppleGothic,sans-serif;&nbsp;font-size: 1.17em;"&gt;Words&lt;/h3&gt;
+&lt;h4 style="font-family:CenturyGothic,AppleGothic,sans-serif;&nbsp;font-size: 1em;"&gt;Words&lt;/h4&gt;
+&lt;h5 style="font-family:CenturyGothic,AppleGothic,sans-serif;&nbsp;font-size: 0.83em;"&gt;Words&lt;/h4&gt;
+&lt;h6 style="font-family:CenturyGothic,AppleGothic,sans-serif;&nbsp;font-size: 0.67em;"&gt;Words&lt;/h4&gt;
+                            </code>
+                        </pre>      
+                    </div>
                 </div>
                 <br>
                 <div class="cd-box">
-                    <h1 class="pt-serif-regular">PT Serif</h1>
-                    <p class="type-heading pt-serif-regular">Spacing &amp; Sizing</p>
+                    <h1 class="main-heading-accordion pt-serif-regular">PT Serif</h1>
+                    <p class="type-heading">Sizing &amp; Code</p>
                     <p class="pt-serif-regular">PT Serif is to be used as the complementary typeface, and mainly used for body content.</p>
                     <br> 
                        
@@ -64,7 +79,7 @@
            
             <h1>Colours</h1>
             <section id="colors" class="cd-colors">
-                <h2>Colors</h2>
+                <h2 class="secondary-heading">Colors</h2>
                 <ul>
                     <li class="cd-box">
                         <div class="cd-color-swatch"></div>
@@ -90,11 +105,11 @@
            
             <h1>Grid</h1>
             <section id="grid" class="cd-grid">
-                <h2>Grid</h2>
+                <h2 class="secondary-heading">Grid</h2>
                 <div class="cd-box">
                     <h1>Column Grid Style</h1>
                     
-                    <p>This page demonstartes the Bootstrap grid system <a href="">link to dissection of grid system</a>.</p>
+                    <p>This page demonstartes the Bootstrap grid system <a href="./grid.html">link to dissection of grid system</a>.</p>
                     
                     <ul>
                         <li>Amount of colums</li>
@@ -104,7 +119,7 @@
                     </ul>
                     <br>
                     
-                    <p>Screen resolutions that range from desktop, tablet and mobile. <a href="">link to media queries</a>.</p>
+                    <p>Screen resolutions that range from desktop, tablet and mobile. <a href="./queries.html">link to media queries</a>.</p>
                     
                     <ul>
                         <li>Media queries</li>
@@ -115,7 +130,7 @@
             
             <h1>UI Elements</h1>
             <section id="elements" class="cd-elements">
-                <h2>UI Elements</h2>
+                <h2 class="secondary-heading">UI Elements</h2>
                 <div class="cd-box">
                     <ul>
                         <li>Input Controls</li>
@@ -162,7 +177,7 @@
            
             <h1>Distribution Channels</h1>
             <section id="channels" class="cd-channels">
-                <h2>Distribution Channels</h2>
+                <h2 class="secondary-heading">Distribution Channels</h2>
                 <ul class="cd-box">
                     <p>Words...</p>
                 </ul>
@@ -170,7 +185,7 @@
             
             <h1>Other</h1>
             <section id="other" class="cd-other">
-                <h2>Other</h2>
+                <h2 class="secondary-heading">Other</h2>
                 <div class="cd-box">
                     <form>
                         <fieldset>
@@ -202,6 +217,7 @@
         </div>
 	</main>
     <script src="js/main.js"></script> <!-- Resource jQuery Stock and Custom -->
+    <script src="js/prism_js.js"></script>
 
 </body>
 </html>
