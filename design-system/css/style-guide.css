@@ -724,17 +724,21 @@ section:nth-of-type(6) h2::before {
   }
 }
 
+.cd-principles .cd-box,
 .cd-typography .cd-box,
-.cd-elements .cd-box,
-.cd-channels .cd-box,
-.cd-other .cd-box {
-  padding: 1em;
+.cd-colours .cd-box,
+.cd-layouts .cd-box,
+.cd-spacing-sizing .cd-box,
+.cd-components .cd-box {
+    padding: 1em;
 }
 @media only screen and (min-width: 768px) {
-  .cd-typography .cd-box .cd-box,
-  .cd-elements .cd-box .cd-box,
-  .cd-channels .cd-box .cd-box,
-  .cd-other .cd-box .cd-box {
+.cd-principles .cd-box,
+.cd-typography .cd-box,
+.cd-colours .cd-box,
+.cd-layouts .cd-box,
+.cd-spacing-sizing .cd-box,
+.cd-components .cd-box {
     padding: 2em;
   }
 }
