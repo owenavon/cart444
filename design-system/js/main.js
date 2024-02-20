@@ -22,7 +22,63 @@ jQuery(document).ready(function($){
 	    }
 	}
 	//set a label for each color swatch
-	$('.cd-color-swatch').each(function(){
+	$('.cd-color-swatch-one').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-two').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-three').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-four').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-five').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-six').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-seven').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-eight').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-nine').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-ten').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-eleven').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twelve').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-thirteen').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-fourteen').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-fifthteen').each(function(){
 		var actual = $(this);
 		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
 	});
