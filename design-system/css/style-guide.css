@@ -1,25 +1,13 @@
 /* ------------------------ */
-/* OTHER COMPONENT          */
+/* TYPOGRAPHY               */
 /* ------------------------ */
 
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
 h1, h2, h3, h4, h5, h6 {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: #19191a;
 }
 
 /*
-h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1.2;
-  margin: 0 0 .4em;
-}
-
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 3.2rem;
@@ -42,10 +30,6 @@ h2 {
     margin: 1em 0 1.4em;
   }
 }
-
-section > h2::before {
-  color: silver;
-}
 */
 
 p {
@@ -53,6 +37,7 @@ p {
   line-height: 1.4;
   color: #58585b;
 }
+
 /*
 p a {
   color: #5f8ee4;
@@ -65,11 +50,6 @@ p a {
   }
 }
 */
-
-body {
-    /* this is the page background */
-    background-color: #ffffff;
-}
 
 h1.main-heading {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
@@ -93,7 +73,6 @@ h1.main-heading-style-guide {
     font-size: 2em;
 }
 
-/* xTypography section - basic style */
 .cd-typography h1.main-heading::before {
     content: 'Aa - ';
     color: #af6d29;
@@ -106,6 +85,7 @@ h2.secondary-heading {
     font-weight: bold;
     text-transform: uppercase;
     margin: 1em 0;
+    font-size: 1.5em;
 }
 
 h2.secondary-heading-extra {
@@ -179,11 +159,9 @@ a.secondary-heading:hover {
     background-color: #ededed !important;
 }
 
-
 ul {
     color: #000000;
 }
-
 
 p.type-heading {
     font-size: 2rem;
@@ -198,15 +176,18 @@ ul {
    list-style-type: disc; 
    list-style-position: inside; 
 }
+
 ol { 
    list-style-type: decimal; 
    list-style-position: inside; 
 }
+
 ul ul, ol ul { 
    list-style-type: circle; 
    list-style-position: inside; 
    margin-left: 15px; 
 }
+
 ol ol, ul ol { 
    list-style-type: lower-latin; 
    list-style-position: inside; 
@@ -325,11 +306,10 @@ a.button-main:visited {
     border-radius: 15px !important;
 }
 
-/* -------------------------------- 
+/* ------------------------ */
+/* DIV BOXES                */
+/* ------------------------ */
 
-xPatterns
-
--------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the grid section */
   border: 1px solid #e6e6e6;
@@ -339,11 +319,19 @@ xPatterns
   padding: 6px;
 }
 
-/* -------------------------------- 
+.cd-box-nested {
+  /* this is the container of various design elements - i.e. the 2 logo of the grid section */
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #f8f8f8;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+}
 
-xNavigation 
+/* ------------------------ */
+/* HEADER                   */
+/* ------------------------ */
 
--------------------------------- */
 header {
   background-color: #585959;
 }
@@ -353,53 +341,20 @@ header {
   background-color: #ededed;
   width: 120px;
 }
+
+main > h1 {
+  color: #19191a;
+}
+
 @media only screen and (min-width: 1024px) {
   .cd-logo {
     width: 180px;
   }
 }
 
-/* -------------------------------- 
-
-xPage title 
-
--------------------------------- */
-main > h1 {
-  color: #19191a;
-}
-/*
-@media only screen and (min-width: 1600px) {
-  main > h1 {
-     title goes into the header on big devices 
-    color: #ffffff;
-  }
-}
-*/
-
-/* -------------------------------- 
-
-xelements 
-
--------------------------------- */
-
-/* -------------------------------- 
-
-xchannels 
-
--------------------------------- */
-.cd-channels li {
-  /* channels size */
-/*
-  width: 32px;
-  height: 32px;
-*/
-}
-
-/* -------------------------------- 
-
-xother 
-
--------------------------------- */
+/* ------------------------ */
+/* OTHER                    */
+/* ------------------------ */
 
 .radio-label,
 .checkbox-label {
@@ -488,11 +443,15 @@ select {
   appearance: none;
 }
 
-/* -------------------------------- 
+/* ------------------------ */
+/* BASIC STYLE              */
+/* ------------------------ */
 
-xBasic style
+body {
+    /* this is the page background */
+    background-color: #ffffff;
+}
 
--------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -529,9 +488,7 @@ header {
   left: 0;
   z-index: 10;
 }
-header nav {
-  display: inline-block;
-}
+
 @media only screen and (min-width: 1024px) {
   header {
     height: 80px;
@@ -561,37 +518,13 @@ header nav {
   transform: translateX(-50%) translateY(-50%);
 }
 
-
-.cd-main-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  padding: 50px 0;
-  text-align: center;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.3s;
-}
-
 main {
   width: 90%;
   max-width: 1024px;
   margin: 0 auto;
   padding: 50px 0;
 }
-/*
-main > h1 {
-  text-align: center;
-  margin: 3em 0;
-}
-*/
+
 @media only screen and (min-width: 1024px) {
   main {
     padding-top: 80px;
@@ -606,38 +539,23 @@ section:after {
   display: table;
   clear: both;
 }
-/*
-section:nth-of-type(1) h2::before {
-  content: '1. ';
-}
-section:nth-of-type(2) h2::before {
-  content: '2. ';
-}
-section:nth-of-type(3) h2::before {
-  content: '3. ';
-}
-section:nth-of-type(4) h2::before {
-  content: '4. ';
-}
-section:nth-of-type(5) h2::before {
-  content: '5. ';
-}
-section:nth-of-type(6) h2::before {
-  content: '6. ';
-}
-*/
+
 @media only screen and (min-width: 768px) {
   section {
     margin: 3em 0 5em;
   }
 }
 
-/* xColor section - basic style */
+/* ------------------------ */
+/* COLOURS                  */
+/* ------------------------ */
+
 .cd-colors li {
-  text-align: center;
-  width: 48%;
-  float: left;
-  margin: 0 4% 1em 0;
+    text-align: center;
+    width: 48%;
+    float: left;
+    margin: 0 4% 1em 0;
+    list-style-type: none;
 }
 .cd-colors li:nth-of-type(2n) {
   margin-right: 0;
@@ -710,6 +628,7 @@ section:nth-of-type(6) h2::before {
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
   background: #f2f2f2;
 }
+
 @media only screen and (min-width: 768px) {
   .cd-colors li {
     width: 19%;
@@ -729,16 +648,19 @@ section:nth-of-type(6) h2::before {
 .cd-colours .cd-box,
 .cd-layouts .cd-box,
 .cd-spacing-sizing .cd-box,
-.cd-components .cd-box {
+.cd-components .cd-box,
+.cd-box-nested {
     padding: 1em;
 }
+
 @media only screen and (min-width: 768px) {
 .cd-principles .cd-box,
 .cd-typography .cd-box,
 .cd-colours .cd-box,
 .cd-layouts .cd-box,
 .cd-spacing-sizing .cd-box,
-.cd-components .cd-box {
+.cd-components .cd-box,
+.cd-box-nested {
     padding: 2em;
   }
 }
