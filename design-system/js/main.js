@@ -27,50 +27,6 @@ jQuery(document).ready(function($){
 		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
 	});
 
-	/*******************
-		elements
-	********************/
-//	var elementsWrapper = $('#elements .cd-box'),
-//		elementsHtml = elementsWrapper.html(),
-//		containerHtml = $('<div class="cd-box"></div>').insertAfter(elementsWrapper),
-//		elementsHtmlText = elementsHtml.split('</button>');
-//
-//	$.map(elementsHtmlText, function(value){
-//		if(value.indexOf('button') >= 0 ) {
-//			var splitText = value.split('class="'),
-//				block1 = splitText[0]+'class="';
-//				block2 = splitText[1].split('"');
-//				
-//			var wrapperElement = $('<p></p>').text(block1),
-//				spanElement = $('<span></span>').text(block2[0]);
-//			spanElement.appendTo(wrapperElement);
-//			wrapperElement.appendTo(containerHtml);
-//			wrapperElement.append('"'+block2[1]+'&lt;/button&gt;');
-//		}
-//	});
-
-	/*******************
-		typography
-	********************/
-//	var heading = $('#typography h1'),
-//		headingDescriptionText = heading.children('span').eq(0),
-//		body = heading.next('p'),
-//		bodyDescriptionText = body.children('span').eq(0);
-//		
-//	setTypography(heading, headingDescriptionText);
-//	setTypography(body, bodyDescriptionText);
-//	$(window).on('resize', function(){
-//		setTypography(heading, headingDescriptionText);
-//		setTypography(body, bodyDescriptionText);
-//	});
-//
-//	function setTypography(element, textElement) {
-//		var fontSize = Math.round(element.css('font-size').replace('px',''))+'px',
-//			fontFamily = (element.css('font-family').split(','))[0].replace(/\'/g, '').replace(/\"/g, ''),
-//			fontWeight = element.css('font-weight');
-//		textElement.text(fontWeight + ' '+ fontFamily+' '+fontSize );
-//	}
-
     /*******************
 		accordion
 	********************/
@@ -80,11 +36,8 @@ jQuery(document).ready(function($){
             active: false
         });
 
-
         $(function() {
             $("a.cd-grid").on("click", function() {
-            
-            
             console.log("test");
             });
         });

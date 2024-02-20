@@ -22,12 +22,12 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 @media only screen and (min-width: 768px) {
   h2 {
     font-size: 1.8rem;
-    margin: 1em 0 1.4em;
+    margin: 1rem 0 1.4rem;
   }
 }
 */
@@ -63,7 +63,7 @@ h1.main-heading-accordion {
 
 h1.main-heading-style-guide {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .cd-typography h1.main-heading::before {
@@ -77,8 +77,8 @@ h2.secondary-heading {
     color: #414141;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 1em 0;
-    font-size: 1.5em;
+    margin: 1rem 0;
+    font-size: 1.75rem;
 }
 
 h2.secondary-heading-extra {
@@ -93,7 +93,7 @@ h2.secondary-heading-extra {
 
 h2.secondary-heading-style-guide {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h3.teritary-heading {
@@ -102,7 +102,7 @@ h3.teritary-heading {
 
 h3.teritary-heading-style-guide {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 1.17em;
+    font-size: 1.17rem;
 }
 
 h4.fourth-heading {
@@ -111,7 +111,7 @@ h4.fourth-heading {
 
 h4.fourth-heading-style-guide {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 h5.fifth-heading {
@@ -120,7 +120,7 @@ h5.fifth-heading {
 
 h5.fifth-heading-style-guide {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 0.83em;
+    font-size: 0.83rem;
 }
 
 h6.sixth-heading {
@@ -129,12 +129,13 @@ h6.sixth-heading {
 
 h6.sixth-heading-style-guide {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    font-size: 0.67em;
+    font-size: 0.67rem;
     margin-bottom: 24px;
 }
 
 a.secondary-heading {
     color: #414141;
+    font-size: 1.5rem;
 }
 
 a.secondary-heading:hover {
@@ -157,13 +158,13 @@ ul {
 }
 
 p.type-heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #58585b;
 }
 
 p.main-text {
-    font-size: 1em;
+    font-size: 1.5rem;
     line-height: 1;
     color: #58585b;
 }
@@ -204,14 +205,29 @@ li.bold {
     background-color: #af6d29;
     border: none;
     color: #585959;
-    padding: 0.75em 1.5em;
+    padding: 0.75rem 1.5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1em;
-    margin: 2em 0.1em;
+    font-size: 1.5rem;
+    margin: 2rem 0.1rem;
     cursor: pointer;
-    border-radius: 0.75em;
+    border-radius: 0.75rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.button-main-grey {
+    background-color: #585959;
+    border: none;
+    color: #af6d29;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 2rem 0.1rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
@@ -259,6 +275,59 @@ a.button-main:visited {
     font-weight: 700;
     font-style: italic;
     color: #58585b;
+}
+
+/* ------------------------ */
+/* COLUMNS                  */
+/* ------------------------ */
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.grid-wrapper {
+    overflow: auto;
+    position: relative;
+    height: 100px;
+}
+
+.grid-content {
+    width: 8.33%;
+    margin: 0;
+    border-right: 1px solid #585959;
+    height: 100%;
+    float: left;
+    background-color: #af6d29;
+}
+
+.grid-content-gutter {
+    width: 8.33%;
+    margin: 0;
+    border-right: 0.9375rem solid #585959;
+    height: 100%;
+    float: left;
+    background-color: #af6d29;
+}
+
+.grid-content-margin {
+    width: 8.33%;
+    margin: 0;
+    border-top: 0.9375rem solid #585959;
+    border-right: 0.9375rem solid #585959;
+    border-bottom: 0.9375rem solid #585959;
+    border-left: 0.9375rem solid #585959;
+    height: 100%;
+    float: left;
+    background-color: #af6d29;
 }
 
 /* ------------------------ */
@@ -320,7 +389,7 @@ a.button-main:visited {
 /* ------------------------ */
 
 .cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the grid section */
+  /* this is the container of various design elrements - i.e. the 2 logo of the grid section */
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   background: #ffffff;
@@ -329,7 +398,7 @@ a.button-main:visited {
 }
 
 .cd-box-nested {
-  /* this is the container of various design elements - i.e. the 2 logo of the grid section */
+  /* this is the container of various design elrements - i.e. the 2 logo of the grid section */
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   background: #f8f8f8;
@@ -365,65 +434,12 @@ main > h1 {
 /* OTHER                    */
 /* ------------------------ */
 
-.radio-label,
-.checkbox-label {
-  padding-left: 24px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.radio-label::before, .radio-label::after,
-.checkbox-label::before,
-.checkbox-label::after {
-  /* custom radio and check boxes */
-  content: '';
-  display: block;
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.radio-label::before,
-.checkbox-label::before {
-  left: 0;
-  border: 1px solid #e6e6e6;
-  box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
-}
-.radio-label::after,
-.checkbox-label::after {
-  left: 3px;
-  background: url("../assets/form/icon-check.svg") no-repeat center center;
-  display: none;
-}
-
-.radio-label::before {
-  border-radius: 50%;
-}
-
-.checkbox-label::before {
-  border-radius: 3px;
-}
-
-input[type=radio]:checked + label::before,
-input[type=checkbox]:checked + label::before {
-  background-color: #19191a;
-  border: none;
-  box-shadow: none;
-}
-
-input[type=radio]:checked + label::after,
-input[type=checkbox]:checked + label::after {
-  display: block;
+hr {
+    border: 1px solid #e6e6e6
 }
 
 .cd-select::after {
-  /* switcher arrow for select element */
+  /* switcher arrow for select elrement */
   content: '';
   position: absolute;
   z-index: 1;
@@ -443,7 +459,7 @@ input[type=checkbox]:checked + label::after {
 
 select {
   position: relative;
-  padding: .6em 2em .6em 1em;
+  padding: .6rem 2rem .6rem 1rem;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -541,7 +557,7 @@ main {
 }
 
 section {
-  margin: 3em 0;
+  margin: 3rem 0;
 }
 section:after {
   content: "";
@@ -551,7 +567,7 @@ section:after {
 
 @media only screen and (min-width: 768px) {
   section {
-    margin: 3em 0 5em;
+    margin: 3rem 0 5rem;
   }
 }
 
@@ -563,7 +579,7 @@ section:after {
     text-align: center;
     width: 48%;
     float: left;
-    margin: 0 4% 1em 0;
+    margin: 0 4% 1rem 0;
     list-style-type: none;
 }
 .cd-colors li:nth-of-type(2n) {
@@ -590,7 +606,7 @@ section:after {
 }
 .cd-colors b {
   display: block;
-  padding: .6em 0;
+  padding: .6rem 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
   background: #af6d29;
@@ -637,12 +653,57 @@ section:after {
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
   background: #f2f2f2;
 }
+.cd-colors li:nth-of-type(6) .cd-color-swatch {
+  background: #ffffff;
+}
+.cd-colors li:nth-of-type(6) .cd-color-swatch::before {
+  background: white;
+}
+.cd-colors li:nth-of-type(6) .cd-color-swatch::after {
+  background: #f2f2f2;
+}
+.cd-colors li:nth-of-type(7) .cd-color-swatch {
+  background: #ffffff;
+}
+.cd-colors li:nth-of-type(7) .cd-color-swatch::before {
+  background: white;
+}
+.cd-colors li:nth-of-type(7) .cd-color-swatch::after {
+  background: #f2f2f2;
+}
+.cd-colors li:nth-of-type(8) .cd-color-swatch {
+  background: #ffffff;
+}
+.cd-colors li:nth-of-type(8) .cd-color-swatch::before {
+  background: white;
+}
+.cd-colors li:nth-of-type(8) .cd-color-swatch::after {
+  background: #f2f2f2;
+}
+.cd-colors li:nth-of-type(9) .cd-color-swatch {
+  background: #ffffff;
+}
+.cd-colors li:nth-of-type(9) .cd-color-swatch::before {
+  background: white;
+}
+.cd-colors li:nth-of-type(9) .cd-color-swatch::after {
+  background: #f2f2f2;
+}
+.cd-colors li:nth-of-type(10) .cd-color-swatch {
+  background: #ffffff;
+}
+.cd-colors li:nth-of-type(10) .cd-color-swatch::before {
+  background: white;
+}
+.cd-colors li:nth-of-type(10) .cd-color-swatch::after {
+  background: #f2f2f2;
+}
 
 @media only screen and (min-width: 768px) {
   .cd-colors li {
     width: 19%;
     float: left;
-    margin: 0 1.25% 1em 0;
+    margin: 0 1.25% 1rem 0;
   }
   .cd-colors li:nth-of-type(2n) {
     margin-right: 1.25%;
@@ -658,8 +719,9 @@ section:after {
 .cd-layouts .cd-box,
 .cd-spacing-sizing .cd-box,
 .cd-components .cd-box,
+.cd-box,
 .cd-box-nested {
-    padding: 1em;
+    padding: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -669,7 +731,8 @@ section:after {
 .cd-layouts .cd-box,
 .cd-spacing-sizing .cd-box,
 .cd-components .cd-box,
+.cd-box,
 .cd-box-nested {
-    padding: 2em;
+    padding: 2rem;
   }
 }
