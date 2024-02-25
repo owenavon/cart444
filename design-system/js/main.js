@@ -82,6 +82,86 @@ jQuery(document).ready(function($){
 		var actual = $(this);
 		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
 	});
+    $('.cd-color-swatch-sixteen').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-seventeen').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-eighteen').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-nineteen').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty-one').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty-two').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty-three').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty-four').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty-five').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty-six').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty-seven').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty-eight').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-twenty-nine').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-thirty').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-thirty-one').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-thirty-two').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-thirty-three').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-thirty-four').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
+    $('.cd-color-swatch-thirty-five').each(function(){
+		var actual = $(this);
+		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
+	});
 
     /*******************
 		accordion

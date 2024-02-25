@@ -49,7 +49,7 @@ h1.main-heading {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: bold;
     color: #af6d29;
-    margin-top: 75px;
+    margin-top: 100px;
     font-size: 36px;
     text-align: center;
 }
@@ -86,7 +86,7 @@ h2.secondary-heading-extra {
     color: #414141;
     margin-top: 12px;
     text-align: center;
-    margin-bottom: 96px;
+    margin-bottom: 80px;
     font-size: 14px;
     margin-top; 0px;
 }
@@ -165,8 +165,15 @@ p.type-heading {
 
 p.main-text {
     font-size: 1.5rem;
-    line-height: 1;
+    line-height: 1.5;
     color: #58585b;
+}
+
+p.header-main-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 ul { 
@@ -585,61 +592,131 @@ section:after {
 .cd-colors li:nth-of-type() {
   margin-right: 0;
 }
-.cd-colors .cd-color-swatch-one, .cd-color-swatch-two, .cd-color-swatch-three, .cd-color-swatch-four, .cd-color-swatch-five, .cd-color-swatch-six, .cd-color-swatch-seven, .cd-color-swatch-eight, .cd-color-swatch-nine, .cd-color-swatch-ten, .cd-color-swatch-eleven, .cd-color-swatch-twelve, .cd-color-swatch-thirteen, .cd-color-swatch-fourteen, .cd-color-swatch-fifthteen {
+.cd-colors .cd-color-swatch-one, .cd-color-swatch-two, .cd-color-swatch-three, .cd-color-swatch-four, .cd-color-swatch-five, .cd-color-swatch-six, .cd-color-swatch-seven, .cd-color-swatch-eight, .cd-color-swatch-nine, .cd-color-swatch-ten, .cd-color-swatch-eleven, .cd-color-swatch-twelve, .cd-color-swatch-thirteen, .cd-color-swatch-fourteen, .cd-color-swatch-fifthteen, .cd-color-swatch-sixteen, .cd-color-swatch-seventeen, .cd-color-swatch-eighteen, .cd-color-swatch-nineteen, .cd-color-swatch-twenty, .cd-color-swatch-twenty-one, .cd-color-swatch-twenty-two, .cd-color-swatch-twenty-three,.cd-color-swatch-twenty-four,.cd-color-swatch-twenty-five,.cd-color-swatch-twenty-six,.cd-color-swatch-twenty-seven,.cd-color-swatch-twenty-eight, .cd-color-swatch-twenty-nine, .cd-color-swatch-thirty, .cd-color-swatch-thirty-one, .cd-color-swatch-thirty-two, .cd-color-swatch-thirty-three, .cd-color-swatch-thirty-three, .cd-color-swatch-thirty-four, .cd-color-swatch-thirty-five {
   position: relative;
   width: 100%;
   padding: 50% 0;
 }
 
+/*ORANGE*/
 .cd-colors .cd-color-swatch-one {
-  background: #af6d29;
+  background: #D6C4B2;
 }
 .cd-colors .cd-color-swatch-two {
-  background: #9a6025;
+  background: #C9A57F;
 }
 .cd-colors .cd-color-swatch-three {
-  background: #bb7a1d;
+  background: #BD8851;
 }
+/*Main orange*/
 .cd-colors .cd-color-swatch-four {
-  background: #bb7a1d;
+  background: #AF6D29;
 }
 .cd-colors .cd-color-swatch-five {
-  background: #262627;
+  background: #7D4A16;
 }
 .cd-colors .cd-color-swatch-six {
-  background: #0d0d0d;
+  background: #4A2A0A;
 }
 .cd-colors .cd-color-swatch-seven {
-  background: #585959;
+  background: #211203;
 }
+
+/*GREEN*/
 .cd-colors .cd-color-swatch-eight {
-  background: #898d8d;
+  background: #B2D6BC;
 }
 .cd-colors .cd-color-swatch-nine {
-  background: #414141;
+  background: #7FC994;
 }
 .cd-colors .cd-color-swatch-ten {
-  background: #e6e6e6;
+  background: #51BD6F;
 }
 .cd-colors .cd-color-swatch-eleven {
-  background: #e6e6e6;
+  background: #29AF4F;
 }
 .cd-colors .cd-color-swatch-twelve {
-  background: #e6e6e6;
+  background: #167D33;
 }
 .cd-colors .cd-color-swatch-thirteen {
-  background: #e6e6e6;
+  background: #0A4A1C;
 }
 .cd-colors .cd-color-swatch-fourteen {
-  background: #e6e6e6;
+  background: #03210B;
 }
+
+/*RED*/
 .cd-colors .cd-color-swatch-fifthteen {
-  background: #e6e6e6;
+  background: #D6B2B2;
+}
+.cd-colors .cd-color-swatch-sixteen {
+  background: #C97F7F;
+}
+.cd-colors .cd-color-swatch-seventeen {
+  background: #BD5151;
+}
+.cd-colors .cd-color-swatch-eighteen {
+  background: #AF2929;
+}
+.cd-colors .cd-color-swatch-nineteen {
+  background: #7D1616;
+}
+.cd-colors .cd-color-swatch-twenty {
+  background: #4A0A0A;
+}
+.cd-colors .cd-color-swatch-twenty-one {
+  background: #210303;
+}
+
+/*BLUE*/
+.cd-colors .cd-color-swatch-twenty-two {
+  background: #B2BED6;
+}
+.cd-colors .cd-color-swatch-twenty-three {
+  background: #7F99C9;
+}
+.cd-colors .cd-color-swatch-twenty-four {
+  background: #5176BD;
+}
+.cd-colors .cd-color-swatch-twenty-five {
+  background: #2957AF;
+}
+.cd-colors .cd-color-swatch-twenty-six {
+  background: #163A7D;
+}
+.cd-colors .cd-color-swatch-twenty-seven {
+  background: #0A204A;
+}
+.cd-colors .cd-color-swatch-twenty-eight {
+  background: #030D21;
+}
+
+/*GREY*/
+.cd-colors .cd-color-swatch-twenty-nine {
+  background: #D9D9D9;
+}
+.cd-colors .cd-color-swatch-thirty {
+  background: #C4C4C4;
+}
+.cd-colors .cd-color-swatch-thirty-one {
+  background: #A6A6A6;
+}
+.cd-colors .cd-color-swatch-thirty-two {
+  background: #8C8C8C;
+}
+.cd-colors .cd-color-swatch-thirty-three {
+  background: #666666;
+}
+.cd-colors .cd-color-swatch-thirty-four {
+  background: #404040;
+}
+.cd-colors .cd-color-swatch-thirty-five {
+  background: #212121;
 }
 
 @media only screen and (min-width: 768px) {
   .cd-colors li {
-    width: 19%;
+    width: 18.75%;
     float: left;
     margin: 0 1.25% 1rem 0;
   }
