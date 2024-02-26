@@ -360,7 +360,7 @@ a.button-main:visited {
 .ui-accordion-content {
     background: #e1e1e1 !important;
     height: auto !important;
-    padding-bottom: 80px !important;
+    padding-bottom: 50px !important;
 }
 
 .ui-state-default {
@@ -735,8 +735,13 @@ section:after {
 .cd-spacing-sizing .cd-box,
 .cd-components .cd-box,
 .cd-box,
-.cd-box-nested {
+.cd-box-nested
+.cd-box-components-section {
     padding: 1rem;
+}
+
+.cd-box-components-section {
+    margin-bottom: 7rem;
 }
 
 @media only screen and (min-width: 768px) {
