@@ -7,44 +7,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #19191a;
 }
 
-/*
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 1rem 0;
-}
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 1.8rem;
-    margin: 1rem 0 1.4rem;
-  }
-}
-*/
-
-/*
-p a {
-  color: #5f8ee4;
-  text-decoration: underline;
-}
-@media only screen and (min-width: 768px) {
-  p {
-    font-size: 1.6rem;
-    line-height: 1.6;
-  }
-}
-*/
-
 h1.main-heading {
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-weight: bold;
@@ -220,6 +182,7 @@ li.bold {
     margin: 2rem 0.1rem;
     cursor: pointer;
     border-radius: 0.75rem;
+    margin-bottom: 0.5rem;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
@@ -235,6 +198,7 @@ li.bold {
     margin: 2rem 0.1rem;
     cursor: pointer;
     border-radius: 0.75rem;
+    margin-bottom: 0.5rem;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
@@ -250,6 +214,29 @@ a.button-main:hover {
 
 a.button-main:visited {
     color: #eeeeee !important;
+}
+
+/* ------------------------ */
+/* PROGRESS BAR             */
+/* ------------------------ */
+
+.progress-light-grey {
+    color: #000000!important;
+    background-color: #f1f1f1!important
+}
+
+.progress-round-xlarge {
+    border-radius: 2rem;
+}
+
+.progress-container {
+    padding: 0.5rem 1.5rem;
+}
+
+.progress-orange {
+    color: #ffffff!important;
+    background-color: #af6d29!important;
+    width: 25%;
 }
 
 /* ------------------------ */
@@ -335,6 +322,82 @@ a.button-main:visited {
     height: 100%;
     float: left;
     background-color: #af6d29;
+}
+
+/* ------------------------ */
+/* CARDS                    */
+/* ------------------------ */
+
+.card {
+    box-shadow: 0 0.5rem 0.25rem 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 33%;
+    border-radius: 1.5rem;
+}
+
+.card:hover {
+    box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 3rem 2rem;
+}
+
+img.card-image {
+    border-radius: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+h1.main-heading-card {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #af6d29;
+    font-size: 2.5rem;
+}
+
+p.main-text-card {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+    color: #58585b;
+}
+
+/* ------------------------ */
+/* DIALOG BOXES             */
+/* ------------------------ */
+
+.dialog-box {
+    transition: 0.3s;
+    width: 33%;
+    border-radius: 1.5rem;
+    background-color: #f8f0e8;
+}
+
+.dialog-box:hover {
+    box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 3rem 2rem;
+}
+
+h1.main-heading-card {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bold;
+    line-height: 1.25;
+    color: #af6d29;
+    font-size: 2.5rem;
+}
+
+p.main-text-card {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+    color: #58585b;
 }
 
 /* ------------------------ */

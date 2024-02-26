@@ -29,14 +29,25 @@
         <button class="button-main-orange"><a class="button-main" href="./index.html">Back</a></button>
         <br>
         <br>
+        <br>
         
         <h1 class="main-heading-accordion">Action</h1>
         <br>
         
         <div class="cd-box cd-box-components-section">
         <h2 class="secondary-heading">Buttons</h2>
-        <button class="button-main-orange"><a class="button-main" href="#">Example</a></button>
-        <button class="button-main-grey"><a class="button-main" href="#">Example</a></button>
+        <button class="button-main-orange"><a class="button-main" href="#">Orange Button</a></button>
+        <button class="button-main-grey"><a class="button-main" href="#">Grey Button</a></button>
+            <br>
+            <br>
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+&lt;button class="button-main-orange"&gt;&lt;a class="button-main" href="#"&gt;Orange&nbsp;button&lt;/a&gt;&lt;/button&gt;
+&lt;button class="button-main-grey"&gt;&lt;a class="button-main" href="#"&gt;Grey&nbsp;button&lt;/a&gt;&lt;/button&gt;
+                    </code>
+                </pre>      
+            </div>
             <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
                 <pre>
                     <code class="language-html line-numbers">
@@ -52,6 +63,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;margin: 2em 0.1em;
 &nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
 &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 0.75em;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 0.5rem;
 &nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
                     </code>
@@ -73,6 +85,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;margin: 2em 0.1em;
 &nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
 &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 0.75em;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 0.5rem;
 &nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
                     </code>
@@ -115,19 +128,306 @@ a.button-main:visited {
         <h1 class="main-heading-accordion">Containment</h1>
         <br>
         <div class="cd-box">
-            <h2 class="secondary-heading">Cards</h2>
+        <h2 class="secondary-heading">Card</h2>
+        <br>
+            <div class="card">
+                <img class="card-image" src="./assets/default.JPG" alt="beach">
+                <div class="container">
+                    <h1 class="main-heading-card">This is a great place for heading text.</h1> 
+                    <p class="main-text-card">This is a great place for some body copy.</p> 
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+&lt;div class="card"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="card-image" src="./assets/default.JPG" alt="beach"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="main-heading-card">This&nbsp;is&nbsp;a&nbsp;great&nbsp;place&nbsp;for&nbsp;heading&nbsp;text.&lt;/h1&gt; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="main-text-card">This&nbsp;is&nbsp;a&nbsp;great&nbsp;place&nbsp;for&nbsp;some&nbsp;body&nbsp;copy.&lt;/p&gt; 
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;      
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.card {
+&nbsp;&nbsp;&nbsp;&nbsp;0 0.5rem 0.25rem 0 rgba(0,0,0,0.2);
+&nbsp;&nbsp;&nbsp;&nbsp;transition: 0.3s;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 33%;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1.5rem;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.card:hover {
+&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.container {
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 3rem 2rem;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+img.card-image {
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-left: auto;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-right: auto;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+h1.main-heading-card {
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;
+&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.25;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #af6d29;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 2.5rem;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+p.main-text-card {
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.5;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 2rem;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #58585b;
+}
+                    </code>
+                </pre>      
+            </div>
         </div>
         <br>
         <br>
         
         <div class="cd-box cd-box-components-section">
-            <h2 class="secondary-heading">Dialog Boxes</h2>
+            <h2 class="secondary-heading">Dialog Box</h2>
+            <br>
+            <div class="dialog-box">
+                <div class="container">
+                    <h1 class="main-heading-card">A title could go here.</h1> 
+                    <p class="main-text-card">The quick brown fox jumps over the lazy dog.</p>
+                    <button class="button-main-orange"><a class="button-main" href="#">Yes</a></button>
+                    <button class="button-main-grey"><a class="button-main" href="#">Cancel</a></button>
+                </div>
+            </div>
+            <br>
+            <br>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+&lt;div class="dialog-box"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="main-heading-card"&gt;A&nbsp;title&nbsp;could&nbsp;go&nbsp;here.&lt;/h1&gt; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="main-text-card"&gt;The&nbsp;quick&nbsp;brown&nbsp;fox&nbsp;jumps&nbsp;over&nbsp;the&nbsp;lazy&nbsp;dog.&lt;/p&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="button-main-orange"&gt;&lt;a class="button-main" href="#"&gt;Yes&lt;/a&gt;&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button class="button-main-grey"&gt;&lt;a class="button-main" href="#"&gt;Cancel&lt;/a&gt;&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/div&gt;      
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.dialog-box {
+&nbsp;&nbsp;&nbsp;&nbsp;transition: 0.3s;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 33%;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f8f0e8;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.dialog-box:hover {
+&nbsp;box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.container {
+&nbsp;padding: 3rem 2rem;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+h1.main-heading-card {
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;
+&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.25;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #af6d29;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 2.5rem;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+p.main-text-card {
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.5;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 2rem;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #58585b;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.button-main-orange {
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #af6d29;
+&nbsp;&nbsp;&nbsp;&nbsp;border: none;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #585959;
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0.75rem 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;
+&nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 2rem 0.1rem;
+&nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 0.75rem;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 0.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.button-main-grey {
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #585959;
+&nbsp;&nbsp;&nbsp;&nbsp;border: none;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #af6d29;
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0.75rem 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
+&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;
+&nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 2rem 0.1rem;
+&nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 0.75rem;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 0.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+                    </code>
+                </pre>      
+            </div>
         </div>
         
         <h1 class="main-heading-accordion">Communication</h1>
         <br>
         <div class="cd-box">
-            <h2 class="secondary-heading">Progress</h2>
+            <h2 class="secondary-heading">Progress Bar</h2>
+            <br>
+            <div class="progress-light-grey progress-round-xlarge">
+                <div class="progress-container progress-orange progress-round-xlarge pt-serif-regular">25%</div>
+            </div>
+            <br>
+            <br>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+&lt;div class="progress-light-grey&nbsp;progress-round-xlarge"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="progress-container progress-orange progress-round-xlarge pt-serif-regular"&gt;25%&lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.progress-light-grey {
+&nbsp;&nbsp;&nbsp;&nbsp;color: #000000!important;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f1f1f1!important
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.progress-round-xlarge {
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 2rem;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.progress-container {
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0.5rem 1.5rem;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block" data-toggle="tooltip" title="HTML code depicting heading tags.">
+                <pre>
+                    <code class="language-html line-numbers">
+.progress-orange {
+&nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff!important;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #af6d29!important;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 25%;
+}
+                    </code>
+                </pre>      
+            </div>
+            
         </div>
         <br>
         <br>
