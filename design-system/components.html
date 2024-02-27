@@ -36,25 +36,26 @@
         
         <div class="cd-box cd-box-components-section">
         <h2 class="secondary-heading">Buttons</h2>
-        <button class="button-main-orange"><a class="button-main" href="#">Orange Button</a></button>
-        <button class="button-main-grey"><a class="button-main" href="#">Grey Button</a></button>
+        <button class="button-main-orange">Orange Button</button>
+        <button class="button-main-grey">Grey Button</button>
             <br>
             <br>
             <div class="code-block">
                 <pre>
                     <code class="language-html line-numbers">
-&lt;button class="button-main-orange"&gt;&lt;a class="button-main" href="#"&gt;Orange&nbsp;button&lt;/a&gt;&lt;/button&gt;
-&lt;button class="button-main-grey"&gt;&lt;a class="button-main" href="#"&gt;Grey&nbsp;button&lt;/a&gt;&lt;/button&gt;
+&lt;button class="button-main-orange"&gt;&lt;/button&gt;
+&lt;button class="button-main-grey"&gt;&lt;/button&gt;
                     </code>
                 </pre>      
             </div>
+            
             <div class="code-block">
                 <pre>
                     <code class="language-html line-numbers">
 .button-main-orange {
 &nbsp;&nbsp;&nbsp;&nbsp;background-color: #af6d29;
 &nbsp;&nbsp;&nbsp;&nbsp;border: none;
-&nbsp;&nbsp;&nbsp;&nbsp;color: #585959;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff;
 &nbsp;&nbsp;&nbsp;&nbsp;padding: 0.75em 1.5em;
 &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
 &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;
@@ -74,9 +75,9 @@
                 <pre>
                     <code class="language-html line-numbers">
 .button-main-grey {
-&nbsp;&nbsp;&nbsp;&nbsp;background-color: #585959;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #8c8c8c;
 &nbsp;&nbsp;&nbsp;&nbsp;border: none;
-&nbsp;&nbsp;&nbsp;&nbsp;color: #af6d29;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff;
 &nbsp;&nbsp;&nbsp;&nbsp;padding: 0.75em 1.5em;
 &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
 &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;
@@ -95,10 +96,8 @@
             <div class="code-block">
                 <pre>
                     <code class="language-html line-numbers">
-a.button-main {
-&nbsp;&nbsp;&nbsp;&nbsp;color: #eee !important;
-&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none !important;
-&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+.button-main-orange:hover {
+&nbsp;&nbsp;&nbsp;&nbsp;color: #7d4a16 !important;
 }
                     </code>
                 </pre>      
@@ -107,18 +106,8 @@ a.button-main {
             <div class="code-block">
                 <pre>
                     <code class="language-html line-numbers">
-a.button-main:hover {
-&nbsp;&nbsp;&nbsp;&nbsp;color: #d0d0d0 !important;
-}
-                    </code>
-                </pre>      
-            </div>
-            
-            <div class="code-block">
-                <pre>
-                    <code class="language-html line-numbers">
-a.button-main:visited {
-&nbsp;&nbsp;&nbsp;&nbsp;color: #eeeeee !important;
+.button-main-grey:hover{
+&nbsp;&nbsp;&nbsp;&nbsp;color: #666666 !important;
 }
                     </code>
                 </pre>      
@@ -132,7 +121,7 @@ a.button-main:visited {
         <br>
             <div class="card">
                 <img class="card-image" src="./assets/default.JPG" alt="beach">
-                <div class="container">
+                <div class="container-card">
                     <h1 class="main-heading-card">This is a great place for heading text.</h1> 
                     <p class="main-text-card">This is a great place for some body copy.</p> 
                 </div>
@@ -179,7 +168,7 @@ a.button-main:visited {
             <div class="code-block">
                 <pre>
                     <code class="language-html line-numbers">
-.container {
+.container-card {
 &nbsp;&nbsp;&nbsp;&nbsp;padding: 3rem 2rem;
 }
                     </code>
@@ -234,7 +223,7 @@ p.main-text-card {
             <h2 class="secondary-heading">Dialog Box</h2>
             <br>
             <div class="dialog-box">
-                <div class="container">
+                <div class="container-dialog">
                     <h1 class="main-heading-card">A title could go here.</h1> 
                     <p class="main-text-card">The quick brown fox jumps over the lazy dog.</p>
                     <button class="button-main-orange"><a class="button-main" href="#">Yes</a></button>
@@ -285,7 +274,7 @@ p.main-text-card {
             <div class="code-block">
                 <pre>
                     <code class="language-html line-numbers">
-.container {
+.container-dialog {
 &nbsp;padding: 3rem 2rem;
 }
                     </code>
@@ -325,17 +314,17 @@ p.main-text-card {
 .button-main-orange {
 &nbsp;&nbsp;&nbsp;&nbsp;background-color: #af6d29;
 &nbsp;&nbsp;&nbsp;&nbsp;border: none;
-&nbsp;&nbsp;&nbsp;&nbsp;color: #585959;
-&nbsp;&nbsp;&nbsp;&nbsp;padding: 0.75rem 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff;
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0.75em 1.5em;
 &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
 &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;
 &nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;
-&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5rem;
-&nbsp;&nbsp;&nbsp;&nbsp;margin: 2rem 0.1rem;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1em;
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 2em 0.1em;
 &nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
-&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 0.75rem;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 0.75em;
 &nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 0.5rem;
-&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
                     </code>
                 </pre>      
@@ -345,23 +334,43 @@ p.main-text-card {
                 <pre>
                     <code class="language-html line-numbers">
 .button-main-grey {
-&nbsp;&nbsp;&nbsp;&nbsp;background-color: #585959;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #8c8c8c;
 &nbsp;&nbsp;&nbsp;&nbsp;border: none;
-&nbsp;&nbsp;&nbsp;&nbsp;color: #af6d29;
-&nbsp;&nbsp;&nbsp;&nbsp;padding: 0.75rem 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff;
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0.75em 1.5em;
 &nbsp;&nbsp;&nbsp;&nbsp;text-align: center;
 &nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;
 &nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;
-&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5rem;
-&nbsp;&nbsp;&nbsp;&nbsp;margin: 2rem 0.1rem;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1em;
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 2em 0.1em;
 &nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
-&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 0.75rem;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 0.75em;
 &nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 0.5rem;
-&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
                     </code>
                 </pre>      
             </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.button-main-orange:hover {
+&nbsp;&nbsp;&nbsp;&nbsp;color: #7d4a16 !important;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.button-main-grey:hover{
+&nbsp;&nbsp;&nbsp;&nbsp;color: #666666 !important;
+}
+                    </code>
+                </pre>      
+            </div>  
         </div>
         
         <h1 class="main-heading-accordion">Communication</h1>
@@ -436,7 +445,7 @@ p.main-text-card {
             <h2 class="secondary-heading">Tooltips and Alerts</h2>
             <br>
             <div class="alert-box">
-                <div class="container">
+                <div class="container-tooltip">
                     <p class="alert-text" data-toggle="tooltip" title="Additional text that only displays upon mouse hover.">Hover over this tooltip.</p>
                 </div>
             </div>
@@ -481,7 +490,7 @@ p.main-text-card {
             <div class="code-block">
                 <pre>
                     <code class="language-html line-numbers">
-.container {
+.container-tooltip {
 &nbsp;&nbsp;&nbsp;&nbsp;padding: 3rem 2rem;
 }
                     </code>
@@ -651,20 +660,364 @@ $(document).ready(function() {
         <br>
         <div class="cd-box">
             <h2 class="secondary-heading">Checkboxes</h2>
+            <br>
+            <label class="container">One
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Two
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">Three
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <br>
+            <br>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">                   
+&lt;label class="container"&gt;One
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" checked="checked"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="checkmark"&gt;&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="container"&gt;Two
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="checkmark">&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="container"&gt;Three
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="checkmark">&lt;/span&gt;
+&lt;/label&gt;
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container {
+&nbsp;&nbsp;&nbsp;display: block;
+&nbsp;&nbsp;&nbsp;position: relative;
+&nbsp;&nbsp;&nbsp;padding-left: 3.5rem;
+&nbsp;&nbsp;&nbsp;margin-bottom: 1rem;
+&nbsp;&nbsp;&nbsp;cursor: pointer;
+&nbsp;&nbsp;&nbsp;font-size: 1.60rem;
+&nbsp;&nbsp;&nbsp;user-select: none;
+&nbsp;&nbsp;&nbsp;padding-top: 0.5rem;
+&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container input {
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.checkmark {
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+&nbsp;&nbsp;&nbsp;&nbsp;top: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;left: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;height: 2.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 2.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #eee;
+}
+
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container:hover input ~ .checkmark {
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #ccc;
+}
+
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container input:checked ~ .checkmark {
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #af6d29;
+}
+
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.checkmark:after {
+&nbsp;&nbsp;&nbsp;&nbsp;content: "";
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+&nbsp;&nbsp;&nbsp;&nbsp;display: none;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container input:checked ~ .checkmark:after {
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container .checkmark:after {
+&nbsp;&nbsp;&nbsp;&nbsp;left: 0.9rem;
+&nbsp;&nbsp;&nbsp;&nbsp;top: 0.35rem;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 0.75rem;
+&nbsp;&nbsp;&nbsp;&nbsp;height: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;border: solid white;
+&nbsp;&nbsp;&nbsp;&nbsp;border-width: 0 3px 3px 0;
+&nbsp;&nbsp;&nbsp;&nbsp;transform: rotate(45deg);
+}
+                    </code>
+                </pre>      
+            </div>
+            
         </div>
         <br>
         <br>
         
         <div class="cd-box cd-box-components-section">
             <h2 class="secondary-heading">Radio Buttons</h2>
+            <br>
+            <label class="container">One
+                <input type="radio" checked="checked" name="radio">
+                <span class="radiomark"></span>
+            </label>
+            <label class="container">Two
+                <input type="radio" name="radio">
+                <span class="radiomark"></span>
+            </label>
+            <label class="container">Three
+                <input type="radio" name="radio">
+                <span class="radiomark"></span>
+            </label>
+            <br>
+            <br>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">                   
+&lt;label class="container"&gt;One
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" checked="checked" name="radio"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="checkmark"&gt;&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="container"&gt;Two
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="checkmark">&lt;/span&gt;
+&lt;/label&gt;
+&lt;label class="container"&gt;Three
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="cradio&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="checkmark">&lt;/span&gt;
+&lt;/label&gt;
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container {
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;
+&nbsp;&nbsp;&nbsp;&nbsp;position: relative;
+&nbsp;&nbsp;&nbsp;&nbsp;padding-left: 3.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 1rem;
+&nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.60rem;
+&nbsp;&nbsp;&nbsp;&nbsp;user-select: none;
+&nbsp;&nbsp;&nbsp;&nbsp;padding-top: 0.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container input {
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.radiomark {
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;
+&nbsp;&nbsp;&nbsp;&nbsp;top: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;left: 0;
+&nbsp;&nbsp;&nbsp;&nbsp;height: 2.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 2.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #eee;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 50%;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container:hover input ~ .radiomark {
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #ccc;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.container input:checked ~ .radiomark {
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #af6d29;
+}
+                    </code>
+                </pre>      
+            </div>
+            
         </div>
         
-        <h1 class="main-heading-accordion">Text input</h1>
+        <h1 class="main-heading-accordion">Text Input</h1>
         <br>
         <div class="cd-box cd-box-components-section">
             <h2 class="secondary-heading">Form Elements</h2>
+            <br>
+            
+            <div class="form-elements">
+                <form action="#">
+                    <label for="fname pt-serif-bold">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name">
+                    <label for="lname pt-serif-bold">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                    <label for="country pt-serif-bold">Choice</label>
+                    <select id="country pt-serif-regular" name="choice">
+                        <option value="australia pt-serif-regular">A</option>
+                        <option value="canada pt-serif-regular">B</option>
+                        <option value="usa pt-serif-regular">C</option>
+                    </select>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <br>
+            <br>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">                                      
+&lt;div class="form-elements"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;form action="#"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="fname pt-serif-bold">First Name&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="fname" name="firstname" placeholder="Your name"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="lname pt-serif-bold">Last Name&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="lname" name="lastname" placeholder="Your last name"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="country pt-serif-bold">Choice&lt;/label&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;select id="country pt-serif-regular" name="choice"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="australia pt-serif-regular">A&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="canada pt-serif-regular"&gt;B&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="usa pt-serif-regular"&gt;C&lt;/option&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/form&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+input[type=text], select {
+&nbsp;&nbsp;&nbsp;&nbsp;width: 100%;
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 1rem 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 1rem 0;
+&nbsp;&nbsp;&nbsp;&nbsp;display: inline-block;
+&nbsp;&nbsp;&nbsp;&nbsp;border: 0.1rem solid #f8f0e8;;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1rem;
+&nbsp;&nbsp;&nbsp;&nbsp;box-sizing: border-box;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom: 2rem;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+&nbsp;&nbsp;&nbsp;&nbsp;input[type=submit] {
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #af6d29;
+&nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff;
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 1rem 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-top: 1rem;
+&nbsp;&nbsp;&nbsp;&nbsp;border: none;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1rem;
+&nbsp;&nbsp;&nbsp;&nbsp;cursor: pointer;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 10%;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-left: auto;
+&nbsp;&nbsp;&nbsp;&nbsp;margin-right: auto;
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+input[type=submit]:hover {
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #7d4a16;
+}
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
+.form-elements {
+&nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f8f0e8;
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 3rem;
+}
+                    </code>
+                </pre>      
+            </div>
+            
         </div>
-        
 	</main>
     <script src="js/main.js"></script> <!-- Resource jQuery Stock and Custom -->
     <script src="js/prism_js.js"></script>

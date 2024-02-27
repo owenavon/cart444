@@ -170,75 +170,6 @@ li.bold {
     cursor: pointer !important;
 }
 
-.button-main-orange {
-    background-color: #af6d29;
-    border: none;
-    color: #585959;
-    padding: 0.75rem 1.5rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5rem;
-    margin: 2rem 0.1rem;
-    cursor: pointer;
-    border-radius: 0.75rem;
-    margin-bottom: 0.5rem;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-}
-
-.button-main-grey {
-    background-color: #585959;
-    border: none;
-    color: #af6d29;
-    padding: 0.75rem 1.5rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5rem;
-    margin: 2rem 0.1rem;
-    cursor: pointer;
-    border-radius: 0.75rem;
-    margin-bottom: 0.5rem;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-}
-
-a.button-main {
-    color: #eee !important;
-    text-decoration: none !important;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
-}
-
-a.button-main:hover {
-    color: #d0d0d0 !important;
-}
-
-a.button-main:visited {
-    color: #eeeeee !important;
-}
-
-/* ------------------------ */
-/* PROGRESS BAR             */
-/* ------------------------ */
-
-.progress-light-grey {
-    color: #000000!important;
-    background-color: #f1f1f1!important
-}
-
-.progress-round-xlarge {
-    border-radius: 2rem;
-}
-
-.progress-container {
-    padding: 0.5rem 1.5rem;
-}
-
-.progress-orange {
-    color: #ffffff!important;
-    background-color: #af6d29!important;
-    width: 25%;
-}
-
 /* ------------------------ */
 /* PT Serif                 */
 /* ------------------------ */
@@ -325,6 +256,56 @@ a.button-main:visited {
 }
 
 /* ------------------------ */
+/* BUTTONS                  */
+/* ------------------------ */
+
+.button-main-orange {
+    background-color: #af6d29;
+    border: none;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 2rem 0.1rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.button-main-grey {
+    background-color: #8c8c8c;
+    border: none;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 2rem 0.1rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+a.button-main {
+    color: #eeeeee !important;
+    text-decoration: none !important;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+
+.button-main-orange:hover {
+    background-color: #7d4a16 !important;
+}
+
+.button-main-grey:hover {
+    background-color: #666666 !important;
+}
+
+/* ------------------------ */
 /* CARDS                    */
 /* ------------------------ */
 
@@ -339,7 +320,7 @@ a.button-main:visited {
     box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
 }
 
-.container {
+.container-card {
     padding: 3rem 2rem;
 }
 
@@ -381,7 +362,7 @@ p.main-text-card {
     box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
 }
 
-.container {
+.container-dialog {
     padding: 3rem 2rem;
 }
 
@@ -401,6 +382,29 @@ p.main-text-card {
 }
 
 /* ------------------------ */
+/* PROGRESS BAR             */
+/* ------------------------ */
+
+.progress-light-grey {
+    color: #000000!important;
+    background-color: #f1f1f1!important
+}
+
+.progress-round-xlarge {
+    border-radius: 2rem;
+}
+
+.progress-container {
+    padding: 0.5rem 1.5rem;
+}
+
+.progress-orange {
+    color: #ffffff!important;
+    background-color: #af6d29!important;
+    width: 25%;
+}
+
+/* ------------------------ */
 /* ALERT & TOOLTIPS BOX     */
 /* ------------------------ */
 
@@ -415,7 +419,7 @@ p.main-text-card {
     box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
 }
 
-.container {
+.container-tooltip {
     padding: 3rem 2rem;
 }
 
@@ -481,6 +485,145 @@ p.alert-text {
 }
 
 /* ------------------------ */
+/* CHECKBOXES               */
+/* ------------------------ */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 3.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1.60rem;
+    user-select: none;
+    padding-top: 0.5rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #af6d29;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 0.9rem;
+    top: 0.35rem;
+    width: 0.75rem;
+    height: 1.5rem;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+/* ------------------------ */
+/* RADIO BUTTONS            */
+/* ------------------------ */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 3.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1.60rem;
+    user-select: none;
+    padding-top: 0.5rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radiomark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input ~ .radiomark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .radiomark {
+  background-color: #af6d29;
+}
+
+/* ------------------------ */
+/* FORM ELEMENTS            */
+/* ------------------------ */
+
+input[type=text], select {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    display: inline-block;
+    border: 0.1rem solid #f8f0e8;;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+input[type=submit] {
+    background-color: #af6d29;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.5rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #7d4a16;
+}
+
+.form-elements {
+    border-radius: 1.5rem;
+    background-color: #f8f0e8;
+    padding: 3rem;
+}
+
+/* ------------------------ */
 /* ACCORDION BOX            */
 /* ------------------------ */
 
@@ -515,7 +658,7 @@ p.alert-text {
 }
 
 /* ------------------------ */
-/* DIALOG BOX               */
+/* UI BOX                   */
 /* ------------------------ */
 
 .ui-widget.ui-widget-content {
