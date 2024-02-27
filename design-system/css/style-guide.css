@@ -310,14 +310,14 @@ a.button-main {
 /* ------------------------ */
 
 .card {
-    box-shadow: 0 0.5rem 0.25rem 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 33%;
     border-radius: 1.5rem;
 }
 
 .card:hover {
-    box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2);
 }
 
 .container-card {
@@ -359,7 +359,7 @@ p.main-text-card {
 }
 
 .dialog-box:hover {
-    box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2);
 }
 
 .container-dialog {
@@ -387,7 +387,8 @@ p.main-text-card {
 
 .progress-light-grey {
     color: #000000!important;
-    background-color: #f1f1f1!important
+    background-color: #f1f1f1!important;
+    width: 50%;
 }
 
 .progress-round-xlarge {
@@ -401,7 +402,7 @@ p.main-text-card {
 .progress-orange {
     color: #ffffff!important;
     background-color: #af6d29!important;
-    width: 25%;
+    width: 75%;
 }
 
 /* ------------------------ */
@@ -410,13 +411,13 @@ p.main-text-card {
 
 .alert-box {
     transition: 0.3s;
-    width: 20%;
+    width: 25%;
     border-radius: 1.5rem;
     background-color: #f8f0e8;
 }
 
 .alert-box:hover {
-    box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2);
 }
 
 .container-tooltip {
@@ -610,6 +611,7 @@ input[type=submit] {
     margin-left: auto;
     margin-right: auto;
     border-radius: 1.5rem;
+    font-size: 1.5rem;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 

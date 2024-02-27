@@ -146,7 +146,7 @@
                 <pre>
                     <code class="language-html line-numbers">
 .card {
-&nbsp;&nbsp;&nbsp;&nbsp;0 0.5rem 0.25rem 0 rgba(0,0,0,0.2);
+&nbsp;&nbsp;&nbsp;&nbsp;0 0.5rem 0.5rem 0 rgba(0,0,0,0.2);
 &nbsp;&nbsp;&nbsp;&nbsp;transition: 0.3s;
 &nbsp;&nbsp;&nbsp;&nbsp;width: 33%;
 &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1.5rem;
@@ -159,7 +159,7 @@
                 <pre>
                     <code class="language-html line-numbers">
 .card:hover {
-&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2);
 }
                     </code>
                 </pre>      
@@ -265,7 +265,7 @@ p.main-text-card {
                 <pre>
                     <code class="language-html line-numbers">
 .dialog-box:hover {
-&nbsp;box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+&nbsp;box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2);
 }
                     </code>
                 </pre>      
@@ -379,7 +379,7 @@ p.main-text-card {
             <h2 class="secondary-heading">Progress Bar</h2>
             <br>
             <div class="progress-light-grey progress-round-xlarge">
-                <div class="progress-container progress-orange progress-round-xlarge pt-serif-regular">25%</div>
+                <div class="progress-container progress-orange progress-round-xlarge pt-serif-regular">75%</div>
             </div>
             <br>
             <br>
@@ -388,7 +388,7 @@ p.main-text-card {
                 <pre>
                     <code class="language-html line-numbers">
 &lt;div class="progress-light-grey&nbsp;progress-round-xlarge"&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="progress-container progress-orange progress-round-xlarge pt-serif-regular"&gt;25%&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="progress-container progress-orange progress-round-xlarge pt-serif-regular"&gt;75%&lt;/div&gt;
 &lt;/div&gt;
                     </code>
                 </pre>      
@@ -399,7 +399,8 @@ p.main-text-card {
                     <code class="language-html line-numbers">
 .progress-light-grey {
 &nbsp;&nbsp;&nbsp;&nbsp;color: #000000!important;
-&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f1f1f1!important
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f1f1f1!important;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 50%;
 }
                     </code>
                 </pre>      
@@ -431,7 +432,7 @@ p.main-text-card {
 .progress-orange {
 &nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff!important;
 &nbsp;&nbsp;&nbsp;&nbsp;background-color: #af6d29!important;
-&nbsp;&nbsp;&nbsp;&nbsp;width: 25%;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 75%;
 }
                     </code>
                 </pre>      
@@ -467,9 +468,19 @@ p.main-text-card {
             <div class="code-block">
                 <pre>
                     <code class="language-html line-numbers">
+$(document).ready(function() {
+&nbsp;&nbsp;&nbsp;&nbsp;$("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+                    </code>
+                </pre>      
+            </div>
+            
+            <div class="code-block">
+                <pre>
+                    <code class="language-html line-numbers">
 .alert-box {
 &nbsp;&nbsp;&nbsp;&nbsp;transition: 0.3s;
-&nbsp;&nbsp;&nbsp;&nbsp;width: 20%;
+&nbsp;&nbsp;&nbsp;&nbsp;width: 25%;
 &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1.5rem;
 &nbsp;&nbsp;&nbsp;&nbsp;background-color: #f8f0e8;
 }
@@ -481,7 +492,7 @@ p.main-text-card {
                 <pre>
                     <code class="language-html line-numbers">
 .alert-box:hover {
-&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+&nbsp;&nbsp;&nbsp;&nbsp;box-shadow: 0 1rem 1rem 0 rgba(0,0,0,0.2);
 }
                     </code>
                 </pre>      
@@ -518,16 +529,6 @@ p.alert-text {
 &nbsp;&nbsp;&nbsp;&nbsp;font-weight: bolder!important;
 &nbsp;&nbsp;&nbsp;&nbsp;color: #000000;
 }
-                    </code>
-                </pre>      
-            </div>
-            
-            <div class="code-block">
-                <pre>
-                    <code class="language-html line-numbers">
-$(document).ready(function() {
-&nbsp;&nbsp;&nbsp;&nbsp;$("body").tooltip({ selector: '[data-toggle=tooltip]' });
-});
                     </code>
                 </pre>      
             </div>
@@ -977,7 +978,7 @@ input[type=text], select {
             <div class="code-block">
                 <pre>
                     <code class="language-html line-numbers">
-&nbsp;&nbsp;&nbsp;&nbsp;input[type=submit] {
+input[type=submit] {
 &nbsp;&nbsp;&nbsp;&nbsp;background-color: #af6d29;
 &nbsp;&nbsp;&nbsp;&nbsp;color: #ffffff;
 &nbsp;&nbsp;&nbsp;&nbsp;padding: 1rem 1.5rem;
@@ -989,6 +990,7 @@ input[type=text], select {
 &nbsp;&nbsp;&nbsp;&nbsp;margin-left: auto;
 &nbsp;&nbsp;&nbsp;&nbsp;margin-right: auto;
 &nbsp;&nbsp;&nbsp;&nbsp;border-radius: 1.5rem;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.5rem;
 &nbsp;&nbsp;&nbsp;&nbsp;font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
                     </code>
