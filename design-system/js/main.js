@@ -179,4 +179,9 @@ jQuery(document).ready(function($){
         });
     
     });
+
+// Tool Tip
+$(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
     

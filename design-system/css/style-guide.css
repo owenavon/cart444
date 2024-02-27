@@ -401,6 +401,86 @@ p.main-text-card {
 }
 
 /* ------------------------ */
+/* ALERT & TOOLTIPS BOX     */
+/* ------------------------ */
+
+.alert-box {
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 1.5rem;
+    background-color: #f8f0e8;
+}
+
+.alert-box:hover {
+    box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 3rem 2rem;
+}
+
+.ui-tooltip {
+    color: #000000 !important;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif !important;
+}
+
+p.alert-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bolder!important;
+    color: #000000;
+}
+
+/* ------------------------ */
+/* DROP DOWN MENU           */
+/* ------------------------ */
+
+.drop-button {
+    background-color: #af6d29;
+    color: white;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.drop-down {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-down-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 13rem;
+    box-shadow: 0 0.75rem 1rem 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-down-content a {
+    color: black;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.drop-down:hover .drop-down-content {
+    display: block;
+}
+
+.drop-down:hover .drop-button {
+    background-color: #7d4a16;
+}
+
+/* ------------------------ */
 /* ACCORDION BOX            */
 /* ------------------------ */
 
