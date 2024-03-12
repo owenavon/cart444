@@ -10,6 +10,10 @@ h1 {
     color: #af6d29;
 }
 
+h1.section {
+    text-align: center;
+}
+
 h5.card-title {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-weight: bold;
@@ -26,6 +30,30 @@ p.card-text {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+p.section {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    text-align: left;
+}
+
+p.project-text-overlay {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: normal;
+}
+
+.image-box {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+img.box {
+    height: 25%;
 }
 
 /*BUTTONS + LINKS*/
@@ -242,7 +270,23 @@ header.masthead .overlay {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-/* rtl:end:ignore */
+
+.project-images .col-lg-4 {
+    
+}
+
+
+/*IMAGE GREY HOVER*/
+
+.grey-image {
+    transition:all .4s;
+}
+.grey-image:not(:hover) {
+    filter:grayscale(100%);
+}
+.grey-image:hover {
+    filter:greyscale(0%);
+}
 
 
 /* Featurettes
