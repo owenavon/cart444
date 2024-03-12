@@ -1,16 +1,61 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
+    color: rgb(var(--bs-tertiary-color-rgb));
 }
 
 
-/* CUSTOMIZE FROM INDEX
--------------------------------------------------- */
+/*BUTTONS + LINKS*/
+
+a {
+    color: #af6d29;
+}
+
+a:hover {
+    color: #575958;
+}
+
+.text-primary {
+    color: #af6d29!important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #af6d29;
+    border-color: #af6d29;
+}
+
+.btn-primary:hover {
+    background-color: #575958!important;
+    border-color: #575958!important;
+    cursor: pointer
+}
+
+/*NAV*/
+
+.navbar {
+    background-color: #A6A6A6;
+}
+
+.navbar-brand:hover {
+    color: #af6d29!important;
+    transition: all 0.3s ease;
+}
+
+a.nav-link {
+    color: #ffffff;
+}
+
+/*RETURN TO TOP BUTTON*/
+#return-to-top i {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+#return-to-top:hover i {
+  top: -10px;
+}
+
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -179,7 +224,10 @@ header.masthead .overlay {
   letter-spacing: -.05rem;
 }
 
-/* rtl:end:remove */
+footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
