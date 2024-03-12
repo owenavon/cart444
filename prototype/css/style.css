@@ -4,6 +4,29 @@ body {
     color: rgb(var(--bs-tertiary-color-rgb));
 }
 
+h1 {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    color: #af6d29;
+}
+
+h5.card-title {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: bold;
+    color: #af6d29;
+}
+
+p {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p.card-text {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /*BUTTONS + LINKS*/
 
@@ -23,6 +46,7 @@ a:hover {
     color: #fff;
     background-color: #af6d29;
     border-color: #af6d29;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 
 .btn-primary:hover {
@@ -44,6 +68,16 @@ a:hover {
 
 a.nav-link {
     color: #ffffff;
+}
+
+.collapse {
+    justify-content: center;
+}
+
+li.nav-item {
+    font-size: 1.1rem;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: normal;
 }
 
 /*RETURN TO TOP BUTTON*/
@@ -227,6 +261,7 @@ header.masthead .overlay {
 footer.footer {
     padding-top: 4rem;
     padding-bottom: 4rem;
+    font-family: "PT Serif", serif;
 }
 
 /* RESPONSIVE CSS
