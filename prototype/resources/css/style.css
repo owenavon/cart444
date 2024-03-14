@@ -108,6 +108,15 @@ li.nav-item {
     font-weight: normal;
 }
 
+/*BIO*/
+
+.bio-picture {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: 100%;
+}
+
 /*RETURN TO TOP BUTTON*/
 #return-to-top i {
   position: relative;
