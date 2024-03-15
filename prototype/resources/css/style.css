@@ -10,8 +10,25 @@ h1 {
     color: #af6d29;
 }
 
+h2 {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: #666666;
+}
+
+h4 {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #404040;
+}
+
 h1.section {
     text-align: center;
+}
+
+h4.section {
+    text-align: center;
+    margin-top: 0;
 }
 
 h5.card-title {
@@ -108,12 +125,29 @@ li.nav-item {
     font-weight: normal;
 }
 
+/*WEB*/
+
+#web {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-box {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+
 /*BIO*/
 
 .bio-picture {
     margin-left: auto;
     margin-right: auto;
-    border-radius: 25px;
+    border-radius: 1rem;
     width: 100%;
 }
 
