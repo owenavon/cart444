@@ -166,12 +166,18 @@ li.nav-item {
     margin-right: auto;
     border-radius: 1rem;
     width: 75%;
+/*
+    margin-top: 10rem !important;
     margin-bottom: 10rem !important;
+*/
 }
 
+/*
 p.bio-text {
+    margin-top: 10rem !important;
     margin-bottom: 10rem !important;
 }
+*/
 
 /*RETURN TO TOP BUTTON*/
 #return-to-top i {
