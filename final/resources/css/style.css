@@ -85,7 +85,15 @@ img.box {
 }
 
 
-/*BUTTONS + LINKS*/
+/* FADE ALBUM COVERS IN */
+#gallery {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+/* BUTTONS + LINKS */
 a {
     color: #af6d29;
 }
