@@ -86,10 +86,19 @@ img.box {
 
 
 /* FADE ALBUM COVERS IN */
-#gallery {
-    animation: fadeInAnimation ease 3s;
+#gallery-fade {
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 
@@ -170,8 +179,7 @@ li.nav-item {
 
 /*BIO*/
 .bio-picture {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1rem;
     border-radius: 1rem;
     width: 75%;
 /*
@@ -247,7 +255,6 @@ header.masthead .overlay {
   }
 }
 
-
 /*MARKETING SECTION*/
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
@@ -259,10 +266,16 @@ header.masthead .overlay {
     margin-left: .75rem;
 }
 
+/*Card Image*/
+.card-image {
+    margin: 1rem;
+}
 
 /*IMAGE GREY HOVER*/
 .grey-image {
     transition:all .4s;
+    border-radius: 1rem;
+    margin: 1rem;
 }
 .grey-image:not(:hover) {
     filter:grayscale(100%);
