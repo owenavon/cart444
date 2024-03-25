@@ -38,7 +38,7 @@ h4.section {
 h5.card-title {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-weight: bold;
-    color: #af6d29;
+    color: #af6d29 !important;
 }
 
 p {
@@ -70,7 +70,22 @@ p.section {
 
 p.project-text-overlay {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    font-weight: normal;
+    font-weight: bold;
+    color: #af6d29;
+}
+
+p.contact-form {
+    text-align: center;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+label {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
 }
 
 .image-box {
