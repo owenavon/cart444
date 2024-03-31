@@ -192,6 +192,12 @@ li.nav-item {
 }
 
 
+/*Video*/
+.no-frame {
+    border-radius: 1rem;
+}
+
+
 /*BIO*/
 .bio-picture {
     margin: 1rem;
