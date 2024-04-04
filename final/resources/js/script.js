@@ -1,7 +1,7 @@
 
 // Change position of each project cover image.
 const getRandomNumber = (function() {
-    let nums = [1,2,3,4,5];
+    let nums = [1,2,3,4,5,6,7,8,9,10,11,12];
     let current = [];
     
     function rand(n) {
@@ -17,7 +17,7 @@ const images = document.querySelectorAll('#gallery-fade img');
 getRandomImages = () => {   
     const imagesNums = [];
     
-    for (let i = 1; i < 6; i++) {
+    for (let i = 1; i < 13; i++) {
         imagesNums.push(getRandomNumber());
     }
     
@@ -26,7 +26,7 @@ getRandomImages = () => {
     })
 }
 
-// Makes the images change order every 8 seconds.
+// Makes the images change order every 10 seconds.
 setInterval(() => {
     getRandomImages()
-}, 8000);
+}, 10000);
