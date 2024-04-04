@@ -12,7 +12,7 @@ const getRandomNumber = (function() {
       return current.splice(rand(current.length), 1);
     }
 }());
-const images = document.querySelectorAll('#gallery img');
+const images = document.querySelectorAll('#gallery-fade img');
 
 getRandomImages = () => {   
     const imagesNums = [];
