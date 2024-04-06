@@ -65,6 +65,7 @@
             
         </div>
     </nav>
+
     
     <!--Welcome-->
     <section class="showcase features-icons bg-light" id="welcome">
@@ -73,16 +74,16 @@
                 <div class="row">
                     <div class="col-lg-12 mt-5 mb-5">
                         <div class="mt-5">
-                            <h1 class="section">Social Media</h1>
+                            <h1 class="section">Contact</h1>
                         </div>
                     </div>
                     
                     <div class="col-lg-8 mb-5">
-                        <p class="mx-auto">Quisque eu pharetra mauris, non dignissim arcu. Curabitur porta congue eros vel iaculis. Aenean mollis ultricies mauris et elementum. Curabitur ante nulla, fringilla vel viverra eu, aliquam in nunc. Nullam nunc dui, viverra ut ipsum quis, lobortis condimentum eros. Sed ornare sed neque quis laoreet. Sed eget gravida massa. Curabitur iaculis, lorem vulputate consectetur egestas, ex ligula porttitor diam, nec gravida ipsum augue sit amet urna. Aenean suscipit ac tellus sit amet elementum. Praesent facilisis mauris a accumsan consequat. Mauris volutpat efficitur quam, ullamcorper gravida ligula ultrices ut. Morbi non enim aliquet, auctor metus quis, vestibulum erat.</p>
+                        <p class="mx-auto ps-5">I enjoy learning, exploring, and experimenting in the field of creative technology. Let me know if you require assistance with your digital presence. I offer freelance creative services to individuals, and small businesses in Montreal, and Ottawa-Gatineau.</p>
                     </div>
                     
-                    <div class="col-lg-4 mt-5 d-flex justify-content-center">
-                        <ul class="list-inline mb-0">
+                    <div class="col-lg-4 d-flex justify-content-center">
+                        <ul class="list-inline mb-5">
                             <li class="list-inline-item mr-3">
                                 <a href="https://www.linkedin.com/in/owenavon" target="_blank"><i class="fab fa-linkedin fa-2x fa-fw"></i></a>
                             </li>
@@ -91,6 +92,9 @@
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://www.behance.net/owen48ea5d" target="_blank"><i class="fab fa-behance-square fa-2x fa-fw"></i></a>
+                            </li>
+                               <li class="list-inline-item">
+                                <a href="./resources/pdf/resume-owen_avon-2023.pdf" target="_blank"><i class="fa-solid fa-file fa-2x fa-fw"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -139,7 +143,6 @@
                 <div class="col-lg-12 mt-4">
                     <div class="mt-5">
                         <h1 class="section-white">Get in Touch</h1>
-                        <p class="contact-form">I want to help you create your next big thing! Contact me with any questions you may have.</p>
                     </div>
                 </div>
                
