@@ -2,7 +2,7 @@ let nums = [];
 
 // Nested array with image, title and links
 const getRandomPosition = (function() {
-    nums = [[1, `Abandonded`, `./projects/abandoned.html`], [2, `Dearly Beloved`, `./projects/dearly-beloved.html`], [3, `Guydance`, `./projects/guydance.html`], [4, `Cafe Molo`, `./projects/cafe-molo.html`], [5, `Inverse`, `./projects/inverse.html`], [6, `Tractor Tipping`, `./projects/tractor-tipping.html`], [7, `Our Hidden Hills`, `./projects/our-hidden-hills.html`], [8, `Ski-Sons`, `./projects/ski-sons.html`], [9, `SPEED`, `./projects/speed.html`], [10, `Contactless Control`, `./projects/contactless-control.html`], [11, `Haptic-Freq`, `./projects/haptic-freq.html`], [12, `-> (Direction)`, `./projects/direction.html`]];
+    nums = [[1, `Abandonded`, `./projects/abandoned.html`], [2, `Dearly Beloved`, `./projects/dearly-beloved.html`], [3, `Guydance`, `./projects/guydance.html`], [4, `Cafe Molo`, `./projects/cafe-molo.html`], [5, `Inverse`, `./projects/inverse.html`], [6, `Tractor Tipping`, `./projects/tractor-tipping.html`], [7, `Our Hidden Hills`, `./projects/our-hidden-hills.html`], [8, `SKI-SONS`, `./projects/ski-sons.html`], [9, `SPEED`, `./projects/speed.html`], [10, `Contactless Control`, `./projects/contactless-control.html`], [11, `Haptic-Freq`, `./projects/haptic-freq.html`], [12, `-> (Direction)`, `./projects/direction.html`]];
     let current = [];
     
     function rand(n) {
