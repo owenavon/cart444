@@ -11,7 +11,8 @@ h1 {
 
 h2 {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    color: #666666;
+    font-weight: bold;
+    color: #af6d29;
 }
 
 h4 {
@@ -38,7 +39,7 @@ h4.section {
 h5.card-title {
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-weight: bold;
-    color: #af6d29 !important;
+    color: #404040 !important;
 }
 
 p {
