@@ -102,7 +102,7 @@ img.box {
 
 
 /* FADE ALBUM COVERS IN */
-#gallery-fade {
+#gallery {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
